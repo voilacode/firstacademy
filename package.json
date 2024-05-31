@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "minify": "minify ./src/js/input.js > ./dist/output.js"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.1",
+    "minify": "^11.0.1",
+    "youtube-lite": "^1.0.0"
+  }
+}
