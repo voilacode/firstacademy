@@ -246,3 +246,4 @@ function nextSlide() {
 showSlide(currentSlide);
 
 setInterval(nextSlide, slideInterval);
+
