@@ -3761,6 +3761,10 @@ lite-youtube.lyt-activated>.lty-playbtn {
     top: 2rem;
   }
 
+  .lg\:top-0 {
+    top: 0px;
+  }
+
   .lg\:col-span-1 {
     grid-column: span 1 / span 1;
   }
