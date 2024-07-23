@@ -688,8 +688,16 @@ video {
   top: 50%;
 }
 
+.top-2 {
+  top: 0.5rem;
+}
+
 .top-28 {
   top: 7rem;
+}
+
+.top-4 {
+  top: 1rem;
 }
 
 .top-40 {
@@ -698,50 +706,6 @@ video {
 
 .top-\[85\%\] {
   top: 85%;
-}
-
-.top-32 {
-  top: 8rem;
-}
-
-.top-24 {
-  top: 6rem;
-}
-
-.top-20 {
-  top: 5rem;
-}
-
-.top-16 {
-  top: 4rem;
-}
-
-.top-8 {
-  top: 2rem;
-}
-
-.top-10 {
-  top: 2.5rem;
-}
-
-.top-11 {
-  top: 2.75rem;
-}
-
-.top-6 {
-  top: 1.5rem;
-}
-
-.top-5 {
-  top: 1.25rem;
-}
-
-.top-4 {
-  top: 1rem;
-}
-
-.top-2 {
-  top: 0.5rem;
 }
 
 .z-0 {
@@ -1109,6 +1073,14 @@ video {
 
 .max-h-0 {
   max-height: 0px;
+}
+
+.max-h-\[90vh\] {
+  max-height: 90vh;
+}
+
+.max-h-\[95vh\] {
+  max-height: 95vh;
 }
 
 .min-h-\[280px\] {
@@ -1939,14 +1911,24 @@ video {
   background-color: rgb(250 204 21 / var(--tw-bg-opacity));
 }
 
-.bg-yellow-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 252 232 / var(--tw-bg-opacity));
-}
-
 .bg-yellow-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(161 98 7 / var(--tw-bg-opacity));
+}
+
+.bg-teal-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(94 234 212 / var(--tw-bg-opacity));
+}
+
+.bg-yellow-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(113 63 18 / var(--tw-bg-opacity));
+}
+
+.bg-purple-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(216 180 254 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-50 {
@@ -2645,6 +2627,21 @@ video {
   color: rgb(133 77 14 / var(--tw-text-opacity));
 }
 
+.text-yellow-900 {
+  --tw-text-opacity: 1;
+  color: rgb(113 63 18 / var(--tw-text-opacity));
+}
+
+.text-purple-800 {
+  --tw-text-opacity: 1;
+  color: rgb(107 33 168 / var(--tw-text-opacity));
+}
+
+.text-purple-900 {
+  --tw-text-opacity: 1;
+  color: rgb(88 28 135 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -3125,6 +3122,11 @@ lite-youtube.lyt-activated>.lty-playbtn {
   --tw-ring-color: rgb(147 197 253 / var(--tw-ring-opacity));
 }
 
+.focus\:ring-blue-400:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(96 165 250 / var(--tw-ring-opacity));
+}
+
 .active\:bg-green-800:active {
   --tw-bg-opacity: 1;
   background-color: rgb(22 101 52 / var(--tw-bg-opacity));
@@ -3232,10 +3234,6 @@ lite-youtube.lyt-activated>.lty-playbtn {
     margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .sm\:p-16 {
-    padding: 4rem;
-  }
-
   .sm\:p-8 {
     padding: 2rem;
   }
@@ -3338,6 +3336,11 @@ lite-youtube.lyt-activated>.lty-playbtn {
     font-size: 6rem;
     line-height: 1;
   }
+
+  .sm\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
 }
 
 @media (min-width: 768px) {
@@ -3433,10 +3436,6 @@ lite-youtube.lyt-activated>.lty-playbtn {
 
   .md\:h-7 {
     height: 1.75rem;
-  }
-
-  .md\:min-h-\[460px\] {
-    min-height: 460px;
   }
 
   .md\:min-h-\[400px\] {
@@ -3757,14 +3756,6 @@ lite-youtube.lyt-activated>.lty-playbtn {
     position: absolute;
   }
 
-  .lg\:top-8 {
-    top: 2rem;
-  }
-
-  .lg\:top-0 {
-    top: 0px;
-  }
-
   .lg\:top-5 {
     top: 1.25rem;
   }
@@ -3831,6 +3822,10 @@ lite-youtube.lyt-activated>.lty-playbtn {
     margin-top: 1rem;
   }
 
+  .lg\:me-0 {
+    margin-inline-end: 0px;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -3845,6 +3840,10 @@ lite-youtube.lyt-activated>.lty-playbtn {
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:h-\[90vh\] {
+    height: 90vh;
   }
 
   .lg\:w-1\/3 {
@@ -3899,6 +3898,18 @@ lite-youtube.lyt-activated>.lty-playbtn {
     width: 100%;
   }
 
+  .lg\:w-96 {
+    width: 24rem;
+  }
+
+  .lg\:w-\[96\] {
+    width: 96;
+  }
+
+  .lg\:w-\[600px\] {
+    width: 600px;
+  }
+
   .lg\:translate-x-28 {
     --tw-translate-x: 7rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -3951,10 +3962,6 @@ lite-youtube.lyt-activated>.lty-playbtn {
 
   .lg\:justify-between {
     justify-content: space-between;
-  }
-
-  .lg\:gap-10 {
-    gap: 2.5rem;
   }
 
   .lg\:gap-24 {
@@ -4086,11 +4093,6 @@ lite-youtube.lyt-activated>.lty-playbtn {
 
   .lg\:text-5xl {
     font-size: 3rem;
-    line-height: 1;
-  }
-
-  .lg\:text-6xl {
-    font-size: 3.75rem;
     line-height: 1;
   }
 
