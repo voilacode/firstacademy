@@ -997,6 +997,10 @@ video {
   margin-bottom: 2rem;
 }
 
+.mt-40 {
+  margin-top: 10rem;
+}
+
 .block {
   display: block;
 }
@@ -3462,6 +3466,18 @@ lite-youtube.lyt-activated>.lty-playbtn {
     margin-top: 2rem;
   }
 
+  .md\:mt-36 {
+    margin-top: 9rem;
+  }
+
+  .md\:mt-40 {
+    margin-top: 10rem;
+  }
+
+  .md\:mt-20 {
+    margin-top: 5rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -3970,6 +3986,10 @@ lite-youtube.lyt-activated>.lty-playbtn {
 
   .lg\:w-\[600px\] {
     width: 600px;
+  }
+
+  .lg\:w-60 {
+    width: 15rem;
   }
 
   .lg\:translate-x-28 {
