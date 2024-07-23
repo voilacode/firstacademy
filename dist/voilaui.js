@@ -1,5 +1,4 @@
-
-//menu
+// Toggle the mobile menu
 function toggleMobileMenu() {
     const mainMenu = document.getElementById('mainMenu');
     const menuIcon = document.getElementById('menuIcon');
@@ -14,6 +13,7 @@ function toggleMobileMenu() {
     }
 }
 
+// Close other dropdowns except the current one
 function closeOtherDropdowns(currentDropdownId) {
     const dropdowns = document.querySelectorAll('.dropdown-menu');
     dropdowns.forEach((dropdown) => {
@@ -23,49 +23,51 @@ function closeOtherDropdowns(currentDropdownId) {
     });
 }
 
-document.getElementById('dropdownToggle').addEventListener('click', function () {
-    var dropdownMenu = document.getElementById('dropdownMenu');
-    closeOtherDropdowns('dropdownMenu');
-    dropdownMenu.classList.toggle('hidden');
+// Toggle the dropdown and handle the show/hide behavior
+function toggleDropdown(dropdownId) {
+    const dropdownMenu = document.getElementById(dropdownId);
+    const isHidden = dropdownMenu.classList.contains('hidden');
+    
+    closeOtherDropdowns(dropdownId);
+
+    if (isHidden) {
+        dropdownMenu.classList.remove('hidden');
+    } else {
+        dropdownMenu.classList.add('hidden');
+    }
+}
+
+// Event listeners for dropdown toggles
+document.getElementById('dropdownToggle').addEventListener('click', function (event) {
+    event.stopPropagation();
+    toggleDropdown('dropdownMenu');
 });
 
-document.getElementById('dropdownToggle1').addEventListener('click', function () {
-    var dropdownMenu1 = document.getElementById('dropdownMenu1');
-    closeOtherDropdowns('dropdownMenu1');
-    dropdownMenu1.classList.toggle('hidden');
+document.getElementById('dropdownToggle1').addEventListener('click', function (event) {
+    event.stopPropagation();
+    toggleDropdown('dropdownMenu1');
 });
 
-document.getElementById('dropdownToggle2').addEventListener('click', function () {
-    var dropdownMenu2 = document.getElementById('dropdownMenu2');
-    closeOtherDropdowns('dropdownMenu2');
-    dropdownMenu2.classList.toggle('hidden');
+document.getElementById('dropdownToggle2').addEventListener('click', function (event) {
+    event.stopPropagation();
+    toggleDropdown('dropdownMenu2');
 });
 
 // Close the dropdowns when clicking outside of them
 document.addEventListener('click', function (event) {
-    var dropdownMenu = document.getElementById('dropdownMenu');
-    var dropdownToggle = document.getElementById('dropdownToggle');
+    const dropdowns = ['dropdownMenu', 'dropdownMenu1', 'dropdownMenu2'];
 
-    if (!dropdownToggle.contains(event.target) && !dropdownMenu.contains(event.target)) {
-        dropdownMenu.classList.add('hidden');
-    }
-
-    var dropdownMenu1 = document.getElementById('dropdownMenu1');
-    var dropdownToggle1 = document.getElementById('dropdownToggle1');
-
-    if (!dropdownToggle1.contains(event.target) && !dropdownMenu1.contains(event.target)) {
-        dropdownMenu1.classList.add('hidden');
-    }
-
-    var dropdownMenu2 = document.getElementById('dropdownMenu2');
-    var dropdownToggle2 = document.getElementById('dropdownToggle2');
-
-    if (!dropdownToggle2.contains(event.target) && !dropdownMenu2.contains(event.target)) {
-        dropdownMenu2.classList.add('hidden');
-    }
+    dropdowns.forEach((dropdownId) => {
+        const dropdownMenu = document.getElementById(dropdownId);
+        const dropdownToggle = document.getElementById(`dropdownToggle${dropdownId === 'dropdownMenu' ? '' : dropdownId.slice(-1)}`);
+        
+        if (dropdownToggle && dropdownMenu && !dropdownToggle.contains(event.target) && !dropdownMenu.contains(event.target)) {
+            dropdownMenu.classList.add('hidden');
+        }
+    });
 });
 
-// appear on hover
+// Appear on hover
 function showDropdown(id) {
     document.getElementById(id).classList.remove("hidden");
 }
@@ -73,14 +75,7 @@ function showDropdown(id) {
 function hideDropdown(id) {
     document.getElementById(id).classList.add("hidden");
 }
-function toggleDropdown(id) {
-    var dropdown = document.getElementById(id);
-    if (dropdown.classList.contains("hidden")) {
-        showDropdown(id);
-    } else {
-        hideDropdown(id);
-    }
-}
+
 
 
 // modal

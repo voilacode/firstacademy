@@ -93,7 +93,7 @@
                                 <div class="right-0 hidden w-full p-2 rounded-md lg:absolute dropdown-menu lg:w-[400px] "
                                     id="dropdownMenu1">
                                     <div
-                                        class="grid grid-cols-5 transform bg-gray-100 border-t-4 border-gray-500 rounded-lg shadow md:bg-white lg:translate-x-40 lg:border-none">
+                                        class="grid grid-cols-5 transform bg-gray-100 border-l-4 border-gray-500 rounded-lg shadow md:bg-white lg:translate-x-40 lg:border-none">
                                         <div class="col-span-2">
                                             <p
                                                 class="uppercase  tracking-wider text-gray-800 font-medium text-[13px] pt-2 px-6">
@@ -174,6 +174,7 @@
                                                 <li class="px-6 py-3 m-0 hover:bg-teal-100">
                                                     <a href="./spokenenglish.html"
                                                         class="block m-0 font-medium text-gray-800 ">
+                                                        class="block m-0 font-medium text-gray-800 ">
                                                         English Language Training
                                                     </a>
                                                 </li>
@@ -186,19 +187,23 @@
                                 onmouseout="hideDropdown('dropdownMenu')" onclick="toggleDropdown('dropdownMenu')">
                                 <button
                                     class="flex justify-between w-full px-4 py-2 font-medium rounded-md outline-none focus:outline-none hover:text-teal-500 text-[16px] "
+                                    class="flex justify-between w-full px-4 py-2 font-medium rounded-md outline-none focus:outline-none hover:text-teal-500 text-[16px] "
                                     id="dropdownToggle">
                                     Material
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4 mt-1 lg:hidden ">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                      </svg>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4 mt-1 lg:hidden ">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                                       </svg>
                                 </button>
                                 <div class="right-0 hidden p-2 lg:absolute dropdown-menu" id="dropdownMenu">
                                     <div
-                                        class="transform bg-gray-100 border-t-4 border-gray-500 rounded-lg shadow lg:bg-white lg:translate-x-28 lg:border-none">
+                                        class="transform bg-white rounded-lg shadow lg:translate-x-28">
                                         <ul class=" text-[15px] lg:w-52">
                                             <li class="px-4 py-3 m-0 rounded-t-xl hover:bg-teal-100">
                                                 <a href="./reading.html"
-                                                    class="block m-0 font-medium text-gray-800 ">
+                                                    class="block m-0 font-medium text-gray-800  ">
                                                     IELTS Reading
                                                 </a>
                                             </li>
@@ -254,11 +259,11 @@
                                 </button>
                                 <div class="right-0 hidden p-2 lg:absolute dropdown-menu" id="dropdownMenu2">
                                     <div
-                                        class="transform bg-gray-100 border-t-4 border-gray-500 rounded-lg shadow lg:translate-x-28 lg:border-none md:bg-white ">
+                                        class="transform bg-white rounded-lg shadow lg:translate-x-28">
                                         <ul class="text-[16px] lg:w-48">
                                             <li class="px-4 py-3 m-0 rounded-t-lg hover:bg-teal-100">
                                                 <a href="./about-us.html"
-                                                    class="block m-0 font-medium text-gray-800 ">
+                                                    class="block m-0 font-medium text-gray-800  ">
                                                     Us
                                                 </a>
                                             </li>
@@ -319,11 +324,11 @@
 
     <!-- body -->
     
-    <section class="max-w-screen-xl px-4 py-4 mx-auto sm:px-16 lg:pt-16 lg:pb-8">
+    <section class="max-w-screen-xl px-4 py-4 mx-auto sm:px-16 lg:py-8">
         <!--text-->
-        <div class="my-5 lg:flex lg:justify-between lg:m-0">
+        <div class="py-5 lg:flex lg:justify-between items-center">
 
-            <div class="my-auto ">
+            <div class="">
                 <p class="text-lg font-semibold text-gray-700 md:pb-4"> Mobile Ready DET is Here!</p>
 
                 <div class="py-1 text-4xl font-extrabold sm:text-6xl font-noto ">
@@ -438,24 +443,19 @@
                 </ul>
 
                 <div class="my-4 sm:flex sm:space-x-4 me-auto">
-                    <button class="px-10 py-3 text-lg font-semibold text-white duration-300 ease-in-out transform rounded-lg hover:translate-y-[-3px] bg-teal-600 hover:bg-teal-700" data-popup="popup">Attend a Class</button>
-                    <button class="py-3 text-lg font-semibold text-white duration-300 ease-in-out rounded-lg hover:translate-y-[-3px] bg-teal-600 px-14 hover:bg-teal-700">Take a Test</button>
-                </div>
+                    <button
+                        class="block w-full p-3 mx-auto mt-2 font-semibold text-center duration-200 ease-in transform bg-teal-500 rounded-lg hover:bg-teal-600 sm:w-60 md:w-full"
+                        aria-label="attend session" data-popup="popup">Attend a Free Session</button>
+
+                    <a href="#move"
+                        class="block w-full p-3 mx-auto mt-2 font-semibold text-center duration-200 ease-in transform rounded-lg bg-lime-400 hover:bg-lime-500 sm:w-60 md:w-full"
+                        aria-label="try test">Take a Test</a>
+            </div>
 
             </div>
 
-            <div class="mx-auto my-auto">
-                <div class="overflow-hidden carousel">
-                    <video width="640" height="360" class="carousel-item w-[400px] block mx-auto active" autoplay loop muted style="border-bottom-left-radius: 50%;">
-                        <source src="../assets/videos/1.mp4" type="video/webm">
-                    </video>
-                    <video width="640" height="360" class="carousel-item w-[400px] block mx-auto" autoplay loop muted style="border-bottom-left-radius: 50%;">
-                        <source src="../assets/videos/2.mp4" type="video/webm">
-                    </video>
-                    <video width="640" height="360" class="carousel-item w-[400px] block mx-auto" autoplay loop muted style="border-bottom-left-radius: 50%;">
-                        <source src="../assets/videos/3.mp4" type="video/webm">
-                    </video>
-                </div>
+            <div class="mx-auto lg:ms-auto lg:me-0">
+                <img src="../assets/file_duolingo.svg" alt="" class="w-full h-96">
             </div>               
 
         </div>
@@ -574,8 +574,8 @@
     <!--Ready for det-->
     <section class="p-5 bg-gray-100 ">
         <div class="flex flex-col items-center max-w-screen-xl mx-auto sm:px-10">
-            <h1 class="text-xl font-bold text-center text-teal-500 lg:text-4xl font-noto">Ready for DET?</h1>
-            <p class="py-1 text-lg text-center text-slate-400">Check your skills with these 5-question tests!</p>
+            <h1 class="mx-4 mt-2 text-2xl font-bold sm:text-4xl font-noto">Ready for DET?</h1>
+            <p class="py-1  text-lg text-center text-slate-400">Check your skills with these 5-question tests!</p>
 
             <div class="flex flex-wrap justify-center gap-4 py-2 lg:py-10 lg:px-4">
                         <a href="#"
@@ -642,168 +642,197 @@
         </section>
 
     <!-- Reviews -->
-    <section class="max-w-screen-xl p-4 py-6 mx-auto mb-5 rounded sm:px-16 ">
-        <h1 class="text-2xl font-bold md:text-5xl title font-noto">See the ♥ our sessions get!</h1>
+    <section class="bg-yellow-100">
+        <section class="max-w-screen-xl p-4 py-8 mx-auto sm:px-16">
+            <h1 class="mx-4 mt-2 text-2xl font-bold sm:text-4xl font-noto">See the ♥ our sessions get</h1>
 
-        <div class="grid gap-4 py-2 md:mt-8 md:grid-cols-8 lg:grid-cols-12">
-            <!--first-->
-            <div class="w-full col-span-4 p-4 duration-200 ease-in transform rounded-br-none shadow-xl cursor-pointer md:p-8 rounded-2xl br h-fit" style="background-color: #2cd0db;" >
-                <div class="d-flex" style="width: 100%; display: inline-block;">
-                    <div class="my-4 rounded-lg pa-8 d-flex flex-column justify-space-between">
-                        <div class="flex flex-row my-2">
-                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                <path
-                                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                            </svg>
-                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                <path
-                                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                            </svg>
-                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                <path
-                                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                            </svg>
-                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                <path
-                                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                            </svg>
-                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                <path
-                                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                            </svg>
-                            <!-- <div class="text-rose-200 text-9xl" style="transform: translateX(270%);">❞</div> -->
-                        </div>
-                        <p class="py-4 mt-2 text-lg font-weight-light">
-                           
-                                First Academy have the best tutors and the best in class counselling for Aboard studies in USA and Canada, clean classrooms with AC and friendly environment. During covid-19 they received all calls and gave advise.                           
-                        </p>
-                        <div class="w-full pt-2 mb-2 border-t border-gray-700"></div>  
-
-                        <div  class="flex gap-2 my-2">
-                            <div class="rounded-full">
-                                <img class="rounded-full" width="40px"  src="../assets/file_hafeez.png" alt="">
+            <div class="grid max-w-screen-xl grid-cols-12 mx-auto mt-2 md:mt-8 sm:gap-4 md:gap-8 place-items-center">
+                <!--first-->
+                <div
+                    class="col-span-12 py-2 p-5 my-2  sm:col-span-6 lg:col-span-4 rounded-3xl rounded-br-none sm:px-7 sm:py-4 min-h-[280px] sm:min-h-[380px]  bg-yellow-300 ">
+                    <div class="d-flex" style="width: 100%; display: inline-block;">
+                        <div class="my-4 pa-8 d-flex flex-column justify-space-between rounded-xl">
+                            <div class="flex flex-row my-2">
+                                <svg class="w-4 h-4 text-yellow-600" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-600" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-600" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-600" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-600" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
                             </div>
-                            <div>
-                                <p class="font-bold ">Hafeez Uddin</p>
-                                <i class="my-0 text-gray-500">Original Google Review</i>
+                            <p class="py-4 mt-2 md:text-lg">
+                                First Academy have the best tutors and the best in class
+                                counselling for Aboard
+                                studies in USA and Canada, clean classrooms with AC and friendly environment. During
+                                covid-19
+                                they
+                                received all calls and gave advise.
+                            </p>
+                            <br>
+                            <div class="flex ">
+                                <div class="my-auto">
+                                    <img src="../assets/file_hafeez.webp" width="45px" class="me-2 rounded-full"
+                                        alt="Hafeez">
+                                </div>
+                                <div class="my-2">
+                                    <p class="font-bold ">Hafeez Uddin</p>
+                                    <a href="https://www.google.com/maps/contrib/113611380901625503093/place/ChIJx7TARMmQyzsR8BKHnJbVVh4/@17.422565,78.434629,15z/data=!4m6!1m5!8m4!1e1!2s113611380901625503093!3m1!1e1?hl=en-IN&entry=ttu"
+                                        target="_blank"
+                                        class="my-0 italic font-semibold text-blue-700 font-italic">Original Google
+                                        Review</a>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <!--second-->
+                <div
+                    class="col-span-12 py-2 p-5 my-2  sm:col-span-6 lg:col-span-4 rounded-3xl rounded-br-none sm:px-7 sm:py-4 min-h-[280px] sm:min-h-[380px]  bg-yellow-300 ">
+                    <div class="d-flex" style="width: 100%; display: inline-block;">
+                        <div class="my-4 pa-8 d-flex flex-column justify-space-between rounded-xl">
+                            <div class="flex flex-row my-2">
+                                <svg class="w-4 h-4 text-yellow-600" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-600" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-600" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-600" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-600" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                            </div>
+                            <p class="py-4 mt-2 md:text-lg">
+                                Excellent academy for GRE coaching and counselling.
+                                The staff is
+                                really good and supportive. I especially liked the verbal sessions taken by Teju sir.
+                                The
+                                admission
+                                process was very transparent. I highly recommend First academy.<br>
+                            </p>
+                            <br>
+                            <div class="flex ">
+                                <div class="my-auto">
+                                    <img src="../assets/file_jahnavi.webp" width="45px" class="me-2 rounded-full"
+                                        alt="priya">
+                                </div>
+                                <div class="my-2">
+                                    <p class="font-bold ">Jhanvi Simhadri</p>
+                                    <a href="https://www.google.com/maps/contrib/115261668379918459698/place/ChIJx7TARMmQyzsR8BKHnJbVVh4/@17.3929049,78.162047,11z/data=!4m6!1m5!8m4!1e1!2s115261668379918459698!3m1!1e1?hl=en-IN"
+                                        target="_blank"
+                                        class="my-0 italic font-semibold text-blue-700 font-italic">Original Google
+                                        Review</a>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <!--third-->
+                <div
+                    class="col-span-12 py-2 p-5 my-2  sm:col-span-6 lg:col-span-4 rounded-3xl rounded-br-none sm:px-7 sm:py-4 min-h-[280px] sm:min-h-[380px] bg-yellow-300 ">
+                    <div class="d-flex" style="width: 100%; display: inline-block;">
+                        <div class="my-4 pa-8 d-flex flex-column justify-space-between rounded-xl">
+                            <div class="flex flex-row my-2">
+                                <svg class="w-4 h-4 text-yellow-600" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-600" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-600" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-600" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-600" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                            </div>
+                            <p class="py-4 mt-2 md:text-lg">I have taken GRE, IELTS Coaching at First Academy and
+                                achieved
+                                great scores in
+                                both the tests. They have excellent faculty. The one-on-one sessions help the students
+                                to
+                                improve
+                                our command on the subjects.<br><br></p>
+                            <div class="flex ">
+                                <div class="my-auto">
+                                    <img src="../assets/file_tedla.webp" width="45px" class="me-2 rounded-full"
+                                        alt="yuktha">
+                                </div>
+                                <div class="my-2">
+                                    <p class="font-bold">Tedla Chandrashekar</p>
+                                    <a href="https://www.google.com/maps/contrib/116461709469865685738/place/ChIJx7TARMmQyzsR8BKHnJbVVh4/@17.4325961,78.4479292,17z/data=!4m6!1m5!8m4!1e1!2s116461709469865685738!3m1!1e1?hl=en-IN"
+                                        target="_blank"
+                                        class="my-0 italic font-semibold text-blue-700 font-italic">Original Google
+                                        Review</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
-
-            <!--second-->
-            <div class="relative w-full col-span-4 p-4 text-white duration-200 ease-in transform rounded-br-none shadow-xl cursor-pointer md:p-8 rounded-2xl br h-fit test"style="background-color: #009f70;">
-                <div class="d-flex" style="width: 100%; display: inline-block;">
-                    <div class="my-4 rounded-lg pa-8 d-flex flex-column justify-space-between ">
-                        <div class="flex flex-row my-2">
-                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                <path
-                                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                            </svg>
-                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                <path
-                                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                            </svg>
-                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                <path
-                                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                            </svg>
-                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                <path
-                                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                            </svg>
-                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                <path
-                                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                            </svg>
-                            
-                        </div>
-                        <p class="py-4 mt-2 text-lg font-weight-light">
-                           Excellent academy for GRE coaching and counselling. The staff is really good and supportive. I especially liked the verbal sessions taken by Teju sir. The admission process was very transparent. I highly recommend First academy.</i>
-                        </p>
-                        <div class="w-full pt-2 mb-2 border-t border-gray-700"></div>  
-
-                        <div  class="flex gap-2 my-2">
-                            <div class="rounded-full" >
-                                <img class="rounded-full" width="40px" src="../assets/file_jahnavi.png" alt="">
-                            </div>
-                            <div>
-                                <p class="font-bold text-white">Jahnavi Simhadri</p>
-                                <i class="my-0 text-white">Original Google Review</i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!--third-->
-            <div class="w-full col-span-4 p-4 duration-200 ease-in transform rounded-br-none shadow-xl cursor-pointer md:p-8 rounded-2xl br h-fit" style="background-color: rgb(243, 214, 98);" >
-                <div class="d-flex" style="width: 100%; display: inline-block;">
-                    <div class="my-4 rounded-lg pa-8 d-flex flex-column justify-space-between">
-                        <div class="flex flex-row my-2">
-                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                <path
-                                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                            </svg>
-                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                <path
-                                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                            </svg>
-                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                <path
-                                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                            </svg>
-                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                <path
-                                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                            </svg>
-                            <svg class="w-4 h-4 text-amber-400" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                <path
-                                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                            </svg>
-                            <!-- <div class="text-rose-200 text-9xl" style="transform: translateX(270%);">❞</div> -->
-                        </div>
-                        <p class="py-4 mt-2 text-lg font-weight-light">
-                           
-                                I have taken GRE, IELTS Coaching at First Academy and achieved great scores in both the tests. They have excellent faculty. The one-on-one sessions help the students to improve our command on the subjects.                            
-                           
-                        </p>
-                        <div class="w-full pt-2 mb-2 border-t border-gray-700"></div>  
-
-                        <div  class="flex gap-2 my-2">
-                            <div>
-                                <img src="../assets/file_suvarchalayuktha.png" alt="">
-                            </div>
-                            <div>
-                                <p class="font-bold text-blue-600">Suvarchala Yuktha</p>
-                                <i class="my-0 ">Original Google Review</i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        </section>
     </section>
 
      <!--What's Awesome-->
      <div class="">
-        <section class="max-w-screen-xl px-4 mx-auto md:pb-8 sm:px-16">
-            <h1 class="py-2 text-3xl font-bold text-center font-noto md:text-5xl">What's Awesome</h1>
+        <section class="max-w-screen-xl px-4 md:py-8 mx-auto sm:px-16">
+            <h1 class="mx-4 mt-2 text-2xl font-bold sm:text-4xl font-noto text-center">What's Awesome</h1>
             <div class="grid max-w-screen-xl grid-cols-12 mx-auto my-4 sm:gap-4 md:gap-8 ">
                 <!-- first -->
                 <div class="col-span-12 p-4 my-2 bg-gray-100 shadow-xl lg:mx-5 sm:col-span-6 lg:col-span-4 md:p-6 rounded-xl">
@@ -993,11 +1022,11 @@
     </div>
 
     <!-- Coaching -->
-    <div class="py-5 bg-blue-50">
+    <div class="bg-blue-50 py-4 text-[18px]  ">
         <div class="max-w-screen-xl p-4 mx-auto mb-5 rounded sm:px-16">
-            <h1 class="pt-4 text-4xl font-bold font-noto">🦉Our Coaching</h1>
-            <p class="py-4 text-lg">Our short term intensive training for DET can be completed in 5 sessions! The perfect length for quick testprep. The training includes sessions that prepare you for all question types of the DET. We are among the very select group of companies that understand and thoroughly prepare you to successfully attempt the complex question types that DET presents you with.</p>
-            <h2 class="py-2 text-lg font-bold font-noto">The course will include, but is not limited to:</h2>
+            <h1 class="text-2xl font-bold sm:text-4xl font-noto">🦉Our Coaching</h1>
+            <p class="py-4 ">Our short term intensive training for DET can be completed in 5 sessions! The perfect length for quick testprep. The training includes sessions that prepare you for all question types of the DET. We are among the very select group of companies that understand and thoroughly prepare you to successfully attempt the complex question types that DET presents you with.</p>
+            <h2 class="py-2 font-noto font-bold">The course will include, but is not limited to:</h2>
             <div class="justify-start gap-48 md:flex">
                 <div>
                     <div class="flex items-center py-1">
@@ -1046,94 +1075,94 @@
                 </div>
                 
             </div>
-            <p class="py-3 text-xl text-start">Our training comes with a complimentary <a href="#" class="text-blue-500 hover:text-blue-700">10 full-length mock test pack</a> specifically designed to simulate the actual DET. The test is also fully mobile ready! Practice anywhere!</p>
+            <p class="py-3 text-start">Our training comes with a complimentary <a href="#" class="text-blue-500 hover:text-blue-700">10 full-length mock test pack</a> specifically designed to simulate the actual DET. The test is also fully mobile ready! Practice anywhere!</p>
             <button
-            class="px-10 py-4 my-4 font-semibold text-center text-white transition-transform duration-300 ease-in-out transform rounded-lg bg-cyan-500 hover:-translate-y-2 hover:shadow-md">Attend a Session</button>
+            class="px-10 py-4 my-4 font-semibold text-center text-white transition-transform duration-300 ease-in-out transform rounded-lg bg-teal-700 hover:-translate-y-2 hover:shadow-md">Attend a Session</button>
         </div>
     </div>
 
-       <!--faq-->
-       <section class="p-4 mx-auto bg-gray-100 sm:px-20">
-        <div class="max-w-screen-xl py-4 mx-auto rounded md:py-10">
-        <h1 class="text-2xl font-bold text-center md:text-4xl font-noto">Questions about Personalised training
-        </h1>
-        <p class="py-5 text-lg text-center">Here are a few questions about our personalised training that people usually want to know the answers to. If your question isn’t answered here, you can always contact Usand we will answer it for you!</p>
+    <!--faq-->
+    <section class="bg-gray-100  p-4 mx-auto">
+        <div class="max-w-screen-xl p-4 mx-auto mb-5 rounded sm:px-16">
+            <h1 class="text-2xl font-bold sm:text-4xl font-noto text-center">Questions about Personalised training
+            </h1>
+            <p class="py-5 text-center text-lg">Here are a few questions about our personalised training that people usually want to know the answers to. If your question isn’t answered here, you can always contact Usand we will answer it for you!</p>
 
-        <!--first-->
-        <div class="mb-2">
-            <button
-            class="flex justify-between w-full px-5 py-3 font-semibold text-left text-gray-700 duration-300 ease-in-out bg-gray-200 rounded-t outline-none cursor-pointer hover:bg-sky-500 focus:bg-sky-500 focus:text-white hover:text-white font-noto hover:border-white focus:border-white accordion ">
-                <div class="font-semibold font-noto">Is it only online?</div>
-                <div class="text-xl font-bold icon hover:text-blue-400">+</div>
-            </button>
-            <div class="hidden p-5 overflow-hidden bg-white border border-gray-200 shadow-xl panel">
-                <p class="mb-2">
-                    Yes! The training is fully online. Keeping in-line with the fully contact free nature of the DET test, our training prepares you for the DET in a way that makes you fully ready. Contact free test and contact free training!
-                </p>
-            </div>
-        </div>
-        
-        <!--second-->
-        <div class="mb-2">
-            <button class="flex justify-between w-full px-5 py-3 font-semibold text-left text-gray-700 duration-300 ease-in-out bg-gray-200 rounded-t outline-none cursor-pointer hover:bg-sky-500 focus:bg-sky-500 focus:text-white hover:text-white font-noto hover:border-white focus:border-white accordion ">
-                <div class="font-semibold font-noto">I want to be training only in one module. Is that possible?</div>
-                <div class="text-xl font-bold icon hover:text-blue-400">+</div>
-            </button>
-            <div class="hidden p-5 overflow-hidden bg-white border border-gray-200 shadow-xl panel">
-                <p class="mb-2">
-                    The questions in DET are fully integrated. Each question type tests multiple areas of lanauge. So like other tests, DET is not amenable to modular coaching.
-                </p>
-            </div>
-        </div>
-
-        <!--third-->
-        <div class="mb-2">
-            <button class="flex justify-between w-full px-5 py-3 font-semibold text-left text-gray-700 duration-300 ease-in-out bg-gray-200 rounded-t outline-none cursor-pointer hover:bg-sky-500 focus:bg-sky-500 focus:text-white hover:text-white font-noto hover:border-white focus:border-white accordion ">
-                <div class="font-semibold font-noto">I live in another country, can i train with you?</div>
-                <div class="text-xl font-bold icon hover:text-blue-400">+</div>
-            </button>
-            <div class="hidden p-5 overflow-hidden bg-white border border-gray-200 shadow-xl panel">
-                <p class="mb-2">
-                    Oh yeah! 😀 We have had people from Australia, Morocco, Iran, Nigeria, and several other places come to us for training. If you wish to visit India for our training, we welcome you with unfettered delight. If you wish to train online, we can do that too! Let us help you get started!
-                </p>
-            </div>
-        </div>  
-
-        <!--fourth-->
-        <div class="mb-2">
-            <button class="flex justify-between w-full px-5 py-3 font-semibold text-left text-gray-700 duration-300 ease-in-out bg-gray-200 rounded-t outline-none cursor-pointer hover:bg-sky-500 focus:bg-sky-500 focus:text-white hover:text-white font-noto hover:border-white focus:border-white accordion ">
-                <div class="font-semibold font-noto">Can i only take the DET Mock Tests?</div>
-                <div class="text-xl font-bold icon hover:text-blue-400">+</div>
-            </button>
-            <div class="hidden p-5 overflow-hidden bg-white border border-gray-200 shadow-xl panel">
-                <p class="mb-2">
-                    If you just wish to have a whole lot of practice material for the duolingo English Test, you can purchase a full suite of <a href="#" class="text-blue-500 hover:text-blue-700">DET practice tests here.</a>
-                </p>  
-            </div>
-        </div>
-
-        <!--fifth-->
-        <div class="mb-2">
-            <button
-            class="flex justify-between w-full px-5 py-3 font-semibold text-left text-gray-700 duration-300 ease-in-out bg-gray-200 rounded-t outline-none cursor-pointer hover:bg-sky-500 focus:bg-sky-500 focus:text-white hover:text-white font-noto hover:border-white focus:border-white accordion ">
-                <div class="font-semibold font-noto">I am still  not sure what do i do?</div>
-                <div class="text-xl font-bold icon hover:text-blue-400">+</div>
-            </button>
-            <div class="hidden p-5 overflow-hidden bg-white border border-gray-200 shadow-xl panel">
-                <p class="mb-2">
-                    Relax. If you just want to talk to someone about the test, please free to call us, or visit us. We will always be ready to assist you! And talking to us is free. If you have a question about the test, we would love to answer it!
-                </p>
-                <p class="mb-2">
-                    Or, you could
-                </p>
-                <div class="flex justify-around">
-                    <div class="px-3 py-2 bg-pink-200 rounded">Attend a demo</div>
-                    <div class="px-3 py-2 bg-teal-200 rounded">Leave a message</div>
-                    <div class="px-3 py-2 bg-pink-200 rounded">Take a Free Test</div>
+            <!--first-->
+            <div class="mb-2">
+                <button
+                class="flex justify-between w-full px-5 py-3 font-semibold text-left  duration-300 ease-in-out bg-gray-200 text-gray-700 hover:bg-sky-500 focus:bg-sky-500 focus:text-white hover:text-white font-noto hover:border-white focus:border-white rounded-t outline-none cursor-pointer accordion  ">
+                    <div class="font-semibold font-noto">Is it only online?</div>
+                    <div class="text-xl font-bold icon hover:text-blue-400">+</div>
+                </button>
+                <div class="hidden p-5 overflow-hidden bg-white border border-gray-200 shadow-xl panel">
+                    <p class="mb-2">
+                        Yes! The training is fully online. Keeping in-line with the fully contact free nature of the DET test, our training prepares you for the DET in a way that makes you fully ready. Contact free test and contact free training!
+                    </p>
                 </div>
-    
             </div>
-        </div>     
+            
+            <!--second-->
+            <div class="mb-2">
+                <button class="flex justify-between w-full px-5 py-3 font-semibold text-left  duration-300 ease-in-out bg-gray-200 text-gray-700 hover:bg-sky-500 focus:bg-sky-500 focus:text-white hover:text-white font-noto hover:border-white focus:border-white rounded-t outline-none cursor-pointer accordion  ">
+                    <div class="font-semibold font-noto">I want to be training only in one module. Is that possible?</div>
+                    <div class="text-xl font-bold icon hover:text-blue-400">+</div>
+                </button>
+                <div class="hidden p-5 overflow-hidden bg-white border border-gray-200 shadow-xl panel">
+                    <p class="mb-2">
+                        The questions in DET are fully integrated. Each question type tests multiple areas of lanauge. So like other tests, DET is not amenable to modular coaching.
+                    </p>
+                </div>
+            </div>
+
+            <!--third-->
+            <div class="mb-2">
+                <button class="flex justify-between w-full px-5 py-3 font-semibold text-left  duration-300 ease-in-out bg-gray-200 text-gray-700 hover:bg-sky-500 focus:bg-sky-500 focus:text-white hover:text-white font-noto hover:border-white focus:border-white rounded-t outline-none cursor-pointer accordion  ">
+                    <div class="font-semibold   font-noto">I live in another country, can i train with you?</div>
+                    <div class="text-xl font-bold icon hover:text-blue-400">+</div>
+                </button>
+                <div class="hidden p-5 overflow-hidden bg-white border border-gray-200 shadow-xl panel">
+                    <p class="mb-2">
+                        Oh yeah! 😀 We have had people from Australia, Morocco, Iran, Nigeria, and several other places come to us for training. If you wish to visit India for our training, we welcome you with unfettered delight. If you wish to train online, we can do that too! Let us help you get started!
+                    </p>
+                </div>
+            </div>  
+
+            <!--fourth-->
+            <div class="mb-2">
+                <button class="flex justify-between w-full px-5 py-3 font-semibold text-left  duration-300 ease-in-out bg-gray-200 text-gray-700 hover:bg-sky-500 focus:bg-sky-500 focus:text-white hover:text-white font-noto hover:border-white focus:border-white rounded-t outline-none cursor-pointer accordion  ">
+                    <div class="font-semibold   font-noto">Can i only take the DET Mock Tests?</div>
+                    <div class="text-xl font-bold icon hover:text-blue-400">+</div>
+                </button>
+                <div class="hidden p-5 overflow-hidden bg-white border border-gray-200 shadow-xl panel">
+                    <p class="mb-2">
+                        If you just wish to have a whole lot of practice material for the duolingo English Test, you can purchase a full suite of <a href="#" class="text-blue-500 hover:text-blue-700">DET practice tests here.</a>
+                    </p>  
+                </div>
+            </div>
+
+            <!--fifth-->
+            <div class="mb-2">
+                <button
+                class="flex justify-between w-full px-5 py-3 font-semibold text-left  duration-300 ease-in-out bg-gray-200 text-gray-700 hover:bg-sky-500 focus:bg-sky-500 focus:text-white hover:text-white font-noto hover:border-white focus:border-white rounded-t outline-none cursor-pointer accordion  ">
+                    <div class="font-semibold   font-noto">I am still  not sure what do i do?</div>
+                    <div class="text-xl font-bold icon hover:text-blue-400">+</div>
+                </button>
+                <div class="hidden p-5 overflow-hidden bg-white border border-gray-200 shadow-xl panel">
+                    <p class="mb-2">
+                        Relax. If you just want to talk to someone about the test, please free to call us, or visit us. We will always be ready to assist you! And talking to us is free. If you have a question about the test, we would love to answer it!
+                    </p>
+                    <p class="mb-2">
+                        Or, you could
+                    </p>
+                    <div class="flex justify-around">
+                        <div class="px-3 py-2 bg-pink-200 rounded">Attend a demo</div>
+                        <div class="px-3 py-2 bg-teal-200 rounded">Leave a message</div>
+                        <div class="px-3 py-2 bg-pink-200 rounded">Take a Free Test</div>
+                    </div>
+        
+                </div>
+            </div>     
 
       </div>
     </section>
