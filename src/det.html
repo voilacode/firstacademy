@@ -245,13 +245,16 @@
                             <li class="relative" onmouseover="showDropdown('dropdownMenu2')"
                                 onmouseout="hideDropdown('dropdownMenu2')" onclick="toggleDropdown('dropdownMenu2')">
                                 <button
-                                    class="flex w-full px-4 py-2 font-medium rounded-md outline-none focus:outline-none hover:text-teal-500 text-[16px] "
+                                    class="flex justify-between w-full px-4 py-2 font-medium rounded-md outline-none focus:outline-none hover:text-teal-500 text-[16px] "
                                     id="dropdownToggle2">
                                     About
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4 mt-1 lg:hidden ">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                      </svg>
                                 </button>
                                 <div class="right-0 hidden p-2 lg:absolute dropdown-menu" id="dropdownMenu2">
                                     <div
-                                        class="transform bg-white rounded-lg shadow lg:translate-x-28">
+                                        class="transform bg-gray-100 border-t-4 border-gray-500 rounded-lg shadow lg:translate-x-28 lg:border-none md:bg-white ">
                                         <ul class="text-[16px] lg:w-48">
                                             <li class="px-4 py-3 m-0 rounded-t-lg hover:bg-teal-100">
                                                 <a href="./about-us.html"
