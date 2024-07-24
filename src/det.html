@@ -14,7 +14,6 @@
     <meta property="og:image" content="https://piofx.s3.ap-south-1.amazonaws.com/themes/53/file_FirstAcademy.png">
     <link rel="shortcut icon" href="https://piofx.s3.ap-south-1.amazonaws.com/themes/53/file_FA.svg">
     <link href="../dist/output.css" rel="stylesheet">
-    <link href="../dist/lite-yt-embed.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -312,15 +311,14 @@
     <br><br>
 
     <!--Latest Post-->
-    <div class="flex items-center justify-center mt-5 bg-teal-100">
+    <div class="flex items-center justify-center mt-4 bg-teal-100">
         <div class="flex items-center my-1 space-x-2 overflow-hidden text-center">
             <div class="p-1 px-3 text-xs font-semibold text-white bg-teal-500 rounded-full">Latest Post</div>
             <div class="text-sm font-semibold md:text-base">Two Questions in One - WT2</div>
         </div>
     </div>
 
-    <!-- body -->
-    
+    <!-- hero -->  
     <section class="max-w-screen-xl px-4 py-4 mx-auto sm:px-16 lg:py-8">
         <!--text-->
         <div class="py-5 lg:flex lg:justify-between items-center">
@@ -452,101 +450,11 @@
             </div>
 
             <div class="mx-auto lg:ms-auto lg:me-0">
-                <img src="../assets/file_duolingo.svg" alt="" class="w-full h-96">
+                <img src="../assets/file_duolingo.svg" alt="" class="w-full h-60 sm:h-96">
             </div>               
 
         </div>
     </section>
-
-     <!-- Modal -->
-     <div id="popup" class="fixed inset-0 z-50 flex items-center justify-center hidden w-screen h-full bg-gray-700 bg-opacity-50">
-
-        <div class="p-4 m-8 bg-white rounded-lg sm:p-8 w-92 sm:w-3/5 lg:w-[600px] max-h-[95vh] overflow-y-auto">
-            <div class="flex justify-between p-4 mb-0 rounded-lg bg-gray-100">
-
-                <div class=" w-[97%]" role="alert">
-                    Do enter the country code of your phone number.<br> Ex: <kbd>+91</kbd> for
-                    India, <kbd>+1</kbd> for the USA.
-                </div>
-
-                <button
-                    class="relative top-0 left-0 mb-4 text-3xl text-gray-500 w-[3%] ms-auto hover:text-gray-700"
-                    data-popup-close="popup">&times;</button>
-            </div>
-
-            <br>
-            <h3 class="text-teal-900">Where would you want to attend a demo</h3>
-            <div class="flex justify-center p-3 my-3 space-x-4 bg-gray-100 rounded-lg">
-                <div class="flex items-center">
-                    <input class="form-checkbox" type="radio" name="settings_location" id="Ameerpet"
-                        value="ameerpet">
-                    <label class="ml-2" for="Ameerpet">Ameerpet</label>
-                </div>
-                <div class="flex items-center">
-                    <input class="form-checkbox" type="radio" name="settings_location" id="Madhapur"
-                        value="madhapur">
-                    <label class="ml-2" for="Madhapur">Madhapur</label>
-                </div>
-                <div class="flex items-center">
-                    <input class="form-checkbox" type="radio" name="settings_location" id="Online"
-                        value="online">
-                    <label class="ml-2" for="Online">Online</label>
-                </div>
-            </div>
-            <h3 class="text-teal-900">Which session would you like to try?</h3>
-            <div class="bg-gray-100">
-                <div class="flex justify-center p-3 mt-3 space-x-4 rounded-lg">
-                    <div class="flex items-center">
-                        <input class="form-checkbox" type="checkbox" value="gre" id="gre"
-                            name="settings_course[]">
-                        <label class="ml-2" for="gre">GRE</label>
-                    </div>
-                    <div class="flex items-center">
-                        <input class="form-checkbox" type="checkbox" value="gre" id="gre"
-                            name="settings_course[]">
-                        <label class="ml-2" for="gre">IELTS</label>
-                    </div>
-                    <div class="flex items-center">
-                        <input class="form-checkbox" type="checkbox" value="gre" id="gre"
-                            name="settings_course[]">
-                        <label class="ml-2" for="gre">TOEFL</label>
-                    </div>
-                    <div class="flex items-center">
-                        <input class="form-checkbox" type="checkbox" value="gre" id="gre"
-                            name="settings_course[]">
-                        <label class="ml-2" for="gre">PTE</label>
-                    </div>
-                </div>
-                <div class="flex justify-center p-3 mb-3 space-x-4 rounded-lg">
-
-                    <div class="flex items-center">
-                        <input class="form-checkbox" type="checkbox" value="gre" id="gre"
-                            name="settings_course[]">
-                        <label class="ml-2" for="gre">OET</label>
-                    </div>
-                    <div class="flex items-center">
-                        <input class="form-checkbox" type="checkbox" value="gre" id="gre"
-                            name="settings_course[]">
-                        <label class="ml-2" for="gre">SAT</label>
-                    </div>
-                    <div class="flex items-center">
-                        <input class="form-checkbox" type="checkbox" value="gre" id="gre"
-                            name="settings_course[]">
-                        <label class="ml-2" for="gre">OTHERS</label>
-                    </div>
-                </div>
-            </div>
-
-            <input type="text" class="block w-full px-4 py-2 focus:ring-blue-400 mt-2 form-input " placeholder="Name"
-                name="name">
-            <input type="email" class="block w-full px-4 py-2 focus:ring-blue-400 mt-2 form-input " placeholder="Email"
-                name="email">
-            <input type="text" class="block w-full px-4 py-2 focus:ring-blue-400 mt-2 form-input " placeholder="Phone Number"
-                name="phone">
-            <button type="button"
-                class="block w-full p-4 mt-3 text-white bg-cyan-600 btn btn-block transition-3d-hover contact_button">Submit</button>
-        </div>
-    </div>  
 
     <!--take free tests-->
     <div class="max-w-screen-xl px-4 mx-auto my-6 sm:px-16">
@@ -828,7 +736,7 @@
 
      <!--What's Awesome-->
      <div class="">
-        <section class="max-w-screen-xl px-4 md:py-8 mx-auto sm:px-16">
+        <section class="max-w-screen-xl p-4 md:py-8 mx-auto sm:px-16">
             <h1 class="mx-4 mt-2 text-2xl font-bold sm:text-4xl font-noto text-center">What's Awesome</h1>
             <div class="grid max-w-screen-xl grid-cols-12 mx-auto my-4 sm:gap-4 md:gap-8 ">
                 <!-- first -->
@@ -891,7 +799,6 @@
             </div>
         </section>
     </div>
-
 
     <!--Data Popup-->
     <div id="popup2"
@@ -1195,7 +1102,7 @@
     </div>
 
     <!--footer links-->
-    <section class="border-t-2 border-gray-200 ">
+    <section class="border-t-2 border-gray-200 font-semibold">
         <div class="p-4 sm:px-0">
             <div class="max-w-screen-xl mx-auto sm:px-[60px]">
                 <div class="space-y-6">
@@ -1600,6 +1507,98 @@
 
         </div>
     </div>
+
+    
+
+    <!-- Modal -->
+    <div id="popup" class="fixed inset-0 z-50 flex items-center justify-center hidden w-screen h-full bg-gray-700 bg-opacity-50">
+
+        <div class="p-4 m-2 sm:m-8 bg-white rounded-lg sm:p-8 w-[96vw] sm:w-3/5 lg:w-[600px] max-h-[95vh] overflow-y-auto">
+            <div class="flex justify-between p-4 mb-0 rounded-lg bg-gray-100">
+
+                <div class=" w-[97%]" role="alert">
+                    Do enter the country code of your phone number.<br> Ex: <kbd>+91</kbd> for
+                    India, <kbd>+1</kbd> for the USA.
+                </div>
+
+                <button
+                    class="relative top-0 left-0 mb-4 text-3xl text-gray-500 w-[3%] ms-auto hover:text-gray-700"
+                    data-popup-close="popup">&times;</button>
+            </div>
+
+            <br>
+            <h3 class="text-teal-900">Where would you want to attend a demo</h3>
+            <div class="flex justify-center p-3 my-3 space-x-4 bg-gray-100 rounded-lg">
+                <div class="flex items-center">
+                    <input class="form-checkbox" type="radio" name="settings_location" id="Ameerpet"
+                        value="ameerpet">
+                    <label class="ml-2" for="Ameerpet">Ameerpet</label>
+                </div>
+                <div class="flex items-center">
+                    <input class="form-checkbox" type="radio" name="settings_location" id="Madhapur"
+                        value="madhapur">
+                    <label class="ml-2" for="Madhapur">Madhapur</label>
+                </div>
+                <div class="flex items-center">
+                    <input class="form-checkbox" type="radio" name="settings_location" id="Online"
+                        value="online">
+                    <label class="ml-2" for="Online">Online</label>
+                </div>
+            </div>
+            <h3 class="text-teal-900">Which session would you like to try?</h3>
+            <div class="bg-gray-100">
+                <div class="flex justify-center p-3 mt-3 space-x-4 rounded-lg">
+                    <div class="flex items-center">
+                        <input class="form-checkbox" type="checkbox" value="gre" id="gre"
+                            name="settings_course[]">
+                        <label class="ml-2" for="gre">GRE</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input class="form-checkbox" type="checkbox" value="gre" id="gre"
+                            name="settings_course[]">
+                        <label class="ml-2" for="gre">IELTS</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input class="form-checkbox" type="checkbox" value="gre" id="gre"
+                            name="settings_course[]">
+                        <label class="ml-2" for="gre">TOEFL</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input class="form-checkbox" type="checkbox" value="gre" id="gre"
+                            name="settings_course[]">
+                        <label class="ml-2" for="gre">PTE</label>
+                    </div>
+                </div>
+                <div class="flex justify-center p-3 mb-3 space-x-4 rounded-lg">
+
+                    <div class="flex items-center">
+                        <input class="form-checkbox" type="checkbox" value="gre" id="gre"
+                            name="settings_course[]">
+                        <label class="ml-2" for="gre">OET</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input class="form-checkbox" type="checkbox" value="gre" id="gre"
+                            name="settings_course[]">
+                        <label class="ml-2" for="gre">SAT</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input class="form-checkbox" type="checkbox" value="gre" id="gre"
+                            name="settings_course[]">
+                        <label class="ml-2" for="gre">OTHERS</label>
+                    </div>
+                </div>
+            </div>
+
+            <input type="text" class="block w-full px-4 py-2 focus:ring-blue-400 mt-2 form-input " placeholder="Name"
+                name="name">
+            <input type="email" class="block w-full px-4 py-2 focus:ring-blue-400 mt-2 form-input " placeholder="Email"
+                name="email">
+            <input type="text" class="block w-full px-4 py-2 focus:ring-blue-400 mt-2 form-input " placeholder="Phone Number"
+                name="phone">
+            <button type="button"
+                class="block w-full p-4 mt-3 text-white bg-cyan-600 btn btn-block transition-3d-hover contact_button">Submit</button>
+        </div>
+    </div> 
 
     <script src="../dist/voilaui.js"></script>
 

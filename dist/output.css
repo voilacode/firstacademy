@@ -1093,6 +1093,10 @@ video {
   height: max-content;
 }
 
+.h-60 {
+  height: 15rem;
+}
+
 .max-h-0 {
   max-height: 0px;
 }
@@ -3213,6 +3217,10 @@ lite-youtube.lyt-activated>.lty-playbtn {
 
   .sm\:hidden {
     display: none;
+  }
+
+  .sm\:h-96 {
+    height: 24rem;
   }
 
   .sm\:min-h-\[380px\] {
