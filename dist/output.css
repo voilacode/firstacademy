@@ -3427,6 +3427,11 @@ lite-youtube.lyt-activated>.lty-playbtn {
     margin-bottom: auto;
   }
 
+  .md\:my-5 {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
   .md\:mb-0 {
     margin-bottom: 0px;
   }
@@ -3745,6 +3750,10 @@ lite-youtube.lyt-activated>.lty-playbtn {
 
   .md\:pb-8 {
     padding-bottom: 2rem;
+  }
+
+  .md\:pb-10 {
+    padding-bottom: 2.5rem;
   }
 
   .md\:text-left {
