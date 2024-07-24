@@ -175,3 +175,112 @@ function initQuiz() {
 
 // Initialize the quiz when the page loads
 window.onload = initQuiz;
+function showSection(section) {
+    // Hide all sections and reset button styles
+    document.querySelectorAll('.cards-section').forEach(el => el.classList.add('hidden'));
+    document.querySelectorAll('#navigation-links').forEach(el => el.classList.add('hidden'));
+    document.querySelectorAll('.text-blue-500').forEach(el => el.classList.remove('text-blue-500', 'font-bold'));
+    document.querySelectorAll('.text-gray-500').forEach(el => el.classList.remove('text-gray-500'));
+
+    // Show the relevant section
+    if (section === 'combo') {
+        document.querySelector(`#${section}`).classList.remove('hidden');
+        document.querySelector('#navigation-links').classList.add('hidden');
+    } else {
+        document.querySelector(`#${section}-qbank`).classList.remove('hidden');
+        document.querySelector('#navigation-links').classList.remove('hidden');
+    }
+
+    // Highlight the active button
+    document.querySelector(`#${section}-btn`).classList.add('text-blue-500', 'font-bold');
+}
+
+function showContent(content) {
+    const activeSectionId = document.querySelector('.cards-section:not(.hidden)').id;
+    if (activeSectionId === 'combo') return; // Skip content change for COMBO section
+
+    // Hide all content and update link styles
+    document.querySelectorAll('.cards-section').forEach(el => el.classList.add('hidden'));
+
+    if (activeSectionId.includes('digital-sa')) {
+        document.querySelector(`#digital-sa-${content}`).classList.remove('hidden');
+    } else if (activeSectionId.includes('act')) {
+        document.querySelector(`#act-${content}`).classList.remove('hidden');
+    }
+
+    document.querySelectorAll('.text-blue-500').forEach(el => el.classList.remove('text-blue-500', 'font-bold'));
+    document.querySelectorAll('.text-gray-500').forEach(el => el.classList.remove('text-gray-500'));
+    document.querySelector(`#${content}-link`).classList.add('text-blue-500', 'font-bold');
+}
+
+// Initialize default view
+document.addEventListener('DOMContentLoaded', () => {
+    showSection('digital-sa');
+    showContent('qbank');
+});
+// Initialize with the first section and content visible
+document.querySelectorAll('.accordion-header').forEach(button => {
+  button.addEventListener('click', () => {
+      const accordionContent = button.nextElementSibling;
+      const accordionIcon = button.querySelector('svg');
+
+      button.classList.toggle('active');
+
+      if (button.classList.contains('active')) {
+          accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+          accordionIcon.style.transform = 'rotate(180deg)';
+      } else {
+          accordionContent.style.maxHeight = 0;
+          accordionIcon.style.transform = 'rotate(0deg)';
+      }
+  });
+});
+document.addEventListener('DOMContentLoaded', () => {
+const prevBtn = document.getElementById('prev-btn');
+const nextBtn = document.getElementById('next-btn');
+const container = document.querySelector('.carousel-container');
+const items = document.querySelectorAll('.testimonial-item');
+
+const itemsToShow = {
+    sm: 1,
+    md: 2,
+    lg: 3
+};
+
+let currentIndex = 0;
+
+const updateCarousel = () => {
+    const screenWidth = window.innerWidth;
+
+    let itemsVisible = itemsToShow.lg;  // Default for large screens
+    if (screenWidth < 768) itemsVisible = itemsToShow.sm; // Mobile
+    else if (screenWidth < 1024) itemsVisible = itemsToShow.md; // Tablet
+
+    // Update the container transform
+    container.style.transform = `translateX(-${(100 / itemsVisible) * currentIndex}%)`;
+};
+
+prevBtn.addEventListener('click', () => {
+    const screenWidth = window.innerWidth;
+    let itemsVisible = itemsToShow.lg;  // Default for large screens
+    if (screenWidth < 768) itemsVisible = itemsToShow.sm; // Mobile
+    else if (screenWidth < 1024) itemsVisible = itemsToShow.md; // Tablet
+
+    currentIndex = Math.max(currentIndex - 1, 0);
+    updateCarousel();
+});
+
+nextBtn.addEventListener('click', () => {
+    const screenWidth = window.innerWidth;
+    let itemsVisible = itemsToShow.lg;  // Default for large screens
+    if (screenWidth < 768) itemsVisible = itemsToShow.sm; // Mobile
+    else if (screenWidth < 1024) itemsVisible = itemsToShow.md; // Tablet
+
+    const maxIndex = items.length - itemsVisible;
+    currentIndex = Math.min(currentIndex + 1, maxIndex);
+    updateCarousel();
+});
+
+window.addEventListener('resize', updateCarousel);
+updateCarousel();  // Initialize carousel
+});
