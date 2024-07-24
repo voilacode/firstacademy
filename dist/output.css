@@ -3400,6 +3400,11 @@ lite-youtube.lyt-activated>.lty-playbtn {
     font-size: 6rem;
     line-height: 1;
   }
+
+  .sm\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
 }
 
 @media (min-width: 768px) {
