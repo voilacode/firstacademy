@@ -3164,6 +3164,10 @@ lite-youtube.lyt-activated>.lty-playbtn {
 }
 
 @media (min-width: 640px) {
+  .sm\:relative {
+    position: relative;
+  }
+
   .sm\:col-span-1 {
     grid-column: span 1 / span 1;
   }
@@ -3985,6 +3989,10 @@ lite-youtube.lyt-activated>.lty-playbtn {
 
   .lg\:w-96 {
     width: 24rem;
+  }
+
+  .lg\:w-\[80\%\] {
+    width: 80%;
   }
 
   .lg\:flex-none {
