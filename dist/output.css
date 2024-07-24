@@ -3203,6 +3203,10 @@ lite-youtube.lyt-activated>.lty-playbtn {
     margin-top: 9rem;
   }
 
+  .sm\:mb-5 {
+    margin-bottom: 1.25rem;
+  }
+
   .sm\:block {
     display: block;
   }
