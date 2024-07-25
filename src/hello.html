@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Cards with Grid Layout</title>
+    <link href="../dist/output.css" rel="stylesheet">
+    <style>
+        .hidden {
+            display: none;
+        }
+        .cards-grid {
+            display: grid;
+            gap: 1rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Buttons -->
+    <div class="flex justify-center">
+        <div class="inline-flex px-4 py-2 rounded-full gap-x-4 md:gap-x-16 bg-blue-50 md:px-8">
+            <button id="digital-sa-btn" class="text-lg text-gray-500 font-open" onclick="showSection('digital-sa')">Digital-SA</button>
+            <button id="act-btn" class="text-lg text-gray-500 font-open" onclick="showSection('act')">ACT</button>
+            <button id="combo-btn" class="text-lg text-gray-500 font-open" onclick="showSection('combo')">COMBO</button>
+        </div>
+    </div>
+
+    <!-- Navigation Links -->
+    <div id="navigation-links" class="flex justify-center py-5 gap-x-10 hidden">
+        <a id="qbank-link" href="#" class="text-lg text-blue-500 font-open" onclick="showContent('qbank')">QBank</a>
+        <p class="font-bold h-6 w-0.5 bg-gray-600"></p>
+        <a id="renewals-link" href="#" class="text-lg text-gray-500 font-open" onclick="showContent('renewals')">Renewals</a>
+    </div>
+
+    <!-- Cards Container -->
+    <div class="container mx-auto px-4">
+        <!-- Digital-SA QBank Cards -->
+        <div id="digital-sa-qbank" class="cards-section">
+            <div class="cards-grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+              <div class="flex flex-col px-8 py-8 bg-white border rounded-lg border-1">
+                <p class="text-lg text-center text-gray-600 font-open">Introductory Plan</p>
+                 <p class="mt-1 text-lg font-medium text-center text-gray-600 font-open">  30 days
+                   </p>
+                   <h5 class="flex items-start justify-center py-5">
+                       <span class="relative text-2xl font-semibold text-gray-700">&dollar;</span>
+                       <span class="text-4xl font-semibold text-gray-700">99</span>
+                   </h5>
+                  <!---------->
+                  <div class="flex flex-col items-center">
+                  <ul class="flex flex-col py-5 text-sm text-gray-600  gap-y-3">
+                   <li class="flex gap-x-1"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="blue" class="bi bi-check-lg" viewBox="0 0 16 16">
+         <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+       </svg>1000+ Practice Questions</li>
+                   <li class="flex gap-x-1"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="blue" class="bi bi-check-lg" viewBox="0 0 16 16">
+         <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+       </svg> Performance Tracking</li>
+                   </ul></div>
+                   <!--------------->
+       <div class="mx-auto mt-24">
+           <button class="py-4 mx-auto text-lg font-medium text-blue-500 border border-blue-500 rounded-full hover:bg-blue-500 bottom-1 w-28 hover:text-white">Buy Now</button>
+       
+       </div>            
+               </div>
+               <!------2-->
+               <div class="flex flex-col justify-center px-8 py-8 bg-white border rounded-lg border-1">
+                   <p class="text-lg text-center text-gray-600 font-open">Score Booster Plan</p>
+                    <p class="mt-1 text-lg font-medium text-center text-gray-600 font-open">90 days
+                      </p>
+                      <h5 class="flex items-start justify-center py-5">
+                          <span class="relative text-2xl font-semibold text-gray-700">&dollar;</span>
+                          <span class="text-4xl font-semibold text-gray-700">149</span>
+                      </h5>
+                     <!---------->
+                    <div class="flex flex-col items-center">
+                        <ul class="flex flex-col justify-center py-5 text-sm text-gray-600  gap-y-3">
+                            <li class="flex gap-x-1"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="blue" class="bi bi-check-lg" viewBox="0 0 16 16">
+                  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+                </svg>1000+ Practice Questions</li>
+                            <li class="flex gap-x-1"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="blue" class="bi bi-check-lg" viewBox="0 0 16 16">
+                  <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+                </svg> Performance Tracking</li>
+                <li class="flex gap-x-1"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="blue" class="bi bi-check-lg" viewBox="0 0 16 16">
+                 <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+               </svg> Access for 12+ weeks</li>
+               <li class="flex gap-x-1"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="blue" class="bi bi-check-lg" viewBox="0 0 16 16">
+                 <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+               </svg> Most Popular</li>
+                            </ul>
+                    </div>
+                      <!--------------->
+                      <button class="py-4 mx-auto mt-5 text-lg font-medium text-blue-500 border border-blue-500 rounded-full hover:bg-blue-500 bottom-1 w-28 hover:text-white">Buy Now</button>
+                      
+                  </div>
+                  <!------3-->
+                  <div class="flex flex-col justify-center px-8 py-8 bg-white border rounded-lg border-1">
+                   <p class="text-lg text-center text-gray-600 font-open">Deep Learning Plan</p>
+                    <p class="mt-1 text-lg font-medium text-center text-gray-600 font-open">180 days
+                      </p>
+                      <h5 class="flex items-start justify-center py-5">
+                          <span class="relative text-2xl font-semibold text-gray-700">&dollar;</span>
+                          <span class="text-4xl font-semibold text-gray-700">199</span>
+                      </h5>
+                     <!---------->
+                     <div class="flex flex-col items-center">
+                     <ul class="flex flex-col justify-center py-5 text-sm text-gray-600  gap-y-3">
+                      <li class="flex gap-x-1"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="blue" class="bi bi-check-lg" viewBox="0 0 16 16">
+            <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+          </svg>1000+ Practice Questions</li>
+                      <li class="flex gap-x-1"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="blue" class="bi bi-check-lg" viewBox="0 0 16 16">
+            <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+          </svg> Performance Tracking</li>
+          <li class="flex gap-x-1"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="blue" class="bi bi-check-lg" viewBox="0 0 16 16">
+           <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+         </svg> Access for 24+ weeks</li>
+         <li class="flex gap-x-1"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="blue" class="bi bi-check-lg" viewBox="0 0 16 16">
+           <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+         </svg> Most Effective</li>
+                      </ul>
+                      </div>
+                      <!--------------->
+                      <button class="py-4 mx-auto mt-5 text-lg font-medium text-white bg-blue-500 border border-blue-500 rounded-full hover:bg-blue-800 bottom-1 w-28">Buy Now</button>
+                      
+                  </div>
+                  <!------4-->
+                  <div class="flex flex-col justify-center px-8 py-8 bg-white border rounded-lg border-1">
+                   <p class="text-lg text-center text-gray-600 font-open">Deep Learning Plan</p>
+                    <p class="mt-1 text-lg font-medium text-center text-gray-600 font-open">360 days
+                      </p>
+                      <h5 class="flex items-start justify-center py-5">
+                          <span class="relative text-2xl font-semibold text-gray-700">&dollar;</span>
+                          <span class="text-4xl font-semibold text-gray-700">249</span>
+                      </h5>
+                     <!---------->
+                     <div class="flex flex-col items-center">
+                     <ul class="flex flex-col justify-center py-5 text-sm text-gray-600  gap-y-3">
+                      <li class="flex gap-x-1"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="blue" class="bi bi-check-lg" viewBox="0 0 16 16">
+            <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+          </svg>1000+ Practice Questions</li>
+                      <li class="flex gap-x-1"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="blue" class="bi bi-check-lg" viewBox="0 0 16 16">
+            <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+          </svg> Performance Tracking</li>
+          <li class="flex gap-x-1"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="blue" class="bi bi-check-lg" viewBox="0 0 16 16">
+           <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+         </svg> Access for 50+ weeks</li>
+         <li class="flex gap-x-1"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="blue" class="bi bi-check-lg" viewBox="0 0 16 16">
+           <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+         </svg>Best Value</li>
+                      </ul>
+                      </div>
+                      <!--------------->
+                      <button class="py-4 mx-auto mt-5 text-lg font-medium text-blue-500 border border-blue-500 rounded-full hover:bg-blue-500 bottom-1 w-28 hover:text-white">Buy Now</button>
+                      
+                  </div>
+            </div>
+        </div>
+
+        <!-- Digital-SA Renewals Cards -->
+        <div id="digital-sa-renewals" class="cards-section hidden">
+            <div class="cards-grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+              <div class="flex flex-col px-8 py-8 bg-white border rounded-lg border-1 ">
+         
+                <p class="mt-1 text-lg font-medium text-center text-gray-600 font-open">  30 days
+                  </p>
+                  <h5 class="flex items-start justify-center py-5">
+                      <span class="relative text-2xl font-semibold text-gray-700">&dollar;</span>
+                      <span class="text-4xl font-semibold text-gray-700">30</span>
+                  </h5>
+                 <!---------->
+                 <p class="text-center">Retain your performance and access for 30 days</p>
+                  <!--------------->
+                  <div class="mx-auto mt-20">
+                      <button class="py-4 mx-auto text-lg font-medium text-blue-500 border border-blue-500 rounded-full hover:bg-blue-500 bottom-1 w-28 hover:text-white">Renew</button>
+                  </div>          
+              </div>
+              <!------2-->
+              <div class="flex flex-col px-8 py-8 bg-white border rounded-lg border-1">
+               
+                  <p class="mt-1 text-lg font-medium text-center text-gray-600 font-open">  90 days
+                    </p>
+                    <h5 class="flex items-start justify-center py-5">
+                        <span class="relative text-2xl font-semibold text-gray-700">&dollar;</span>
+                        <span class="text-4xl font-semibold text-gray-700">60</span>
+                    </h5>
+                   <!---------->
+                   <p class="text-center">Retain your performance and access for 90 days</p>
+                    <!--------------->
+        <div class="mx-auto mt-20">
+            <button class="py-4 mx-auto text-lg font-medium text-blue-500 border border-blue-500 rounded-full hover:bg-blue-500 bottom-1 w-28 hover:text-white">Renew</button>
+        </div>            
+                </div>
+                 <!------3-->
+                 <div class="flex flex-col px-8 py-8 bg-white border rounded-lg border-1">
+                   <p class="mt-1 text-lg font-medium text-center text-gray-600 font-open">180 days
+                     </p>
+                     <h5 class="flex items-start justify-center py-5">
+                         <span class="relative text-2xl font-semibold text-gray-700">&dollar;</span>
+                         <span class="text-4xl font-semibold text-gray-700">100</span>
+                     </h5>
+                    <!---------->
+                    <p class="text-center">Retain your performance and access for 180 days</p>               <!--------------->
+                    <div class="mx-auto mt-20">
+                      <button class="py-4 mx-auto text-lg font-medium text-white bg-blue-500 border border-blue-500 rounded-full hover:bg-blue-800 bottom-1 w-28">Renew</button>
+                  </div>
+                 </div>
+                 <!------4-->
+                 <div class="flex flex-col px-8 py-8 bg-white border rounded-lg border-1 ">
+                   <p class="mt-1 text-lg font-medium text-center text-gray-600 font-open">360 days
+                     </p>
+                     <h5 class="flex items-start justify-center py-5">
+                         <span class="relative text-2xl font-semibold text-gray-700">&dollar;</span>
+                         <span class="text-4xl font-semibold text-gray-700">150</span>
+                     </h5>
+                    <!---------->
+                    <p class="text-center">Retain your performance and access for 360 days</p>
+                     <!--------------->
+                     <div class="mx-auto mt-20">
+                      <button class="py-4 mx-auto text-lg font-medium text-blue-500 border border-blue-500 rounded-full hover:bg-blue-500 bottom-1 w-28 hover:text-white">Renew</button>
+                  </div>
+                     
+                 </div>
+            </div>
+        </div>
+
+        <!-- ACT QBank Cards -->
+        <div id="act-qbank" class="cards-section hidden">
+            <div class="cards-grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+              <div class="flex flex-col justify-center px-8 py-8 bg-white border rounded-lg border-1">
+                <p class="text-lg text-center text-gray-600 font-open">Limited Time Offer</p>
+                 <p class="mt-1 text-lg font-medium text-center text-gray-600 font-open">  30 days
+                   </p>
+                   <h5 class="flex items-start justify-center py-5">
+                       <span class="relative text-2xl font-semibold text-gray-700">&dollar;</span>
+                       <span class="text-4xl font-semibold text-gray-700">99</span>
+                   </h5>
+                  <!---------->
+                  <div class="flex flex-col items-center">
+                  <ul class="flex flex-col justify-center py-5 text-sm text-gray-600  gap-y-3">
+                   <li class="flex gap-x-1"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="blue" class="bi bi-check-lg" viewBox="0 0 16 16">
+           <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+           </svg>3200+  Practice Questions</li>
+                   <li class="flex gap-x-1"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="blue" class="bi bi-check-lg" viewBox="0 0 16 16">
+           <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+           </svg> Performance Tracking</li>
+                   </ul></div>
+                   <!--------------->
+           <div class="mx-auto mt-24">
+           <button class="py-4 mx-auto text-lg font-medium text-blue-500 border border-blue-500 rounded-full hover:bg-blue-500 bottom-1 w-28 hover:text-white">Buy Now</button>
+           
+           </div>            
+               </div>
+               <!------2-->
+               <div class="flex flex-col justify-center px-8 py-8 bg-white border rounded-lg border-1">
+                   <p class="text-lg text-center text-gray-600 font-open">Most Popular</p>
+                    <p class="mt-1 text-lg font-medium text-center text-gray-600 font-open">90 days
+                      </p>
+                      <h5 class="flex items-start justify-center py-5">
+                          <span class="relative text-2xl font-semibold text-gray-700">&dollar;</span>
+                          <span class="text-4xl font-semibold text-gray-700">149</span>
+                      </h5>
+                     <!---------->
+                     <div class="flex flex-col items-center">
+                     <ul class="flex flex-col justify-center py-5 text-sm text-gray-600  gap-y-3">
+                      <li class="flex gap-x-1"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="blue" class="bi bi-check-lg" viewBox="0 0 16 16">
+            <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+           </svg>3200+ Practice Questions</li>
+                      <li class="flex gap-x-1"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="blue" class="bi bi-check-lg" viewBox="0 0 16 16">
+            <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+           </svg> Performance Tracking</li>
+           <li class="flex gap-x-1"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="blue" class="bi bi-check-lg" viewBox="0 0 16 16">
+           <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+           </svg>1 self-assessment with score predictor</li>
+           
+                      </ul></div>
+                      <!--------------->
+                      <button class="py-4 mx-auto mt-5 text-lg font-medium text-blue-500 border border-blue-500 rounded-full hover:bg-blue-500 bottom-1 w-28 hover:text-white">Buy Now</button>
+                      
+                  </div>
+                  <!------3-->
+                  <div class="flex flex-col justify-center px-8 py-8 bg-white border rounded-lg border-1">
+                   <p class="text-lg text-center text-gray-600 font-open">Deep Learning Plan</p>
+                    <p class="mt-1 text-lg font-medium text-center text-gray-600 font-open">180 days
+                      </p>
+                      <h5 class="flex items-start justify-center py-5">
+                          <span class="relative text-2xl font-semibold text-gray-700">&dollar;</span>
+                          <span class="text-4xl font-semibold text-gray-700">199</span>
+                      </h5>
+                     <!---------->
+                     <div class="flex flex-col items-center">
+                     <ul class="flex flex-col justify-center py-5 text-sm text-gray-600  gap-y-3">
+                       <li class="flex gap-x-1"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="blue" class="bi bi-check-lg" viewBox="0 0 16 16">
+             <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+            </svg>3200+ Practice Questions</li>
+                       <li class="flex gap-x-1"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="blue" class="bi bi-check-lg" viewBox="0 0 16 16">
+             <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+            </svg> Performance Tracking</li>
+            <li class="flex gap-x-1"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="blue" class="bi bi-check-lg" viewBox="0 0 16 16">
+            <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+            </svg>2 self-assessment with score predictor</li>
+            
+                       </ul></div>
+                      <!--------------->
+                      <button class="py-4 mx-auto mt-5 text-lg font-medium text-white bg-blue-500 border border-blue-500 rounded-full hover:bg-blue-800 bottom-1 w-28">Buy Now</button>
+                      
+                  </div>
+                  <!------4-->
+                  <div class="flex flex-col justify-center px-8 py-8 bg-white border rounded-lg border-1">
+                   <p class="text-lg text-center text-gray-600 font-open">Best Value</p>
+                    <p class="mt-1 text-lg font-medium text-center text-gray-600 font-open">180 days
+                      </p>
+                      <h5 class="flex items-start justify-center py-5">
+                          <span class="relative text-2xl font-semibold text-gray-700">&dollar;</span>
+                          <span class="text-4xl font-semibold text-gray-700">199</span>
+                      </h5>
+                     <!---------->
+                     <div class="flex flex-col items-center">
+                     <ul class="flex flex-col justify-center py-5 text-sm text-gray-600  gap-y-3">
+                       <li class="flex gap-x-1"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="blue" class="bi bi-check-lg" viewBox="0 0 16 16">
+             <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+            </svg>3200+ Practice Questions</li>
+                       <li class="flex gap-x-1"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="blue" class="bi bi-check-lg" viewBox="0 0 16 16">
+             <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+            </svg> Performance Tracking</li>
+            <li class="flex gap-x-1"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="blue" class="bi bi-check-lg" viewBox="0 0 16 16">
+            <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+            </svg>3 self-assessment with score predictor</li>
+            
+                       </ul></div>
+                      <!--------------->
+                      <button class="py-4 mx-auto mt-5 text-lg font-medium text-blue-500 border border-blue-500 rounded-full hover:bg-blue-500 bottom-1 w-28 hover:text-white">Buy Now</button>
+                      
+                  </div>
+            </div>
+        </div>
+
+        <!-- ACT Renewals Cards -->
+        <div id="act-renewals" class="cards-section hidden">
+           <div class="flex justify-center">
+            <div class="cards-grid grid-cols-1 w-80 justify-items-center justify-center">
+              <div class="flex flex-col px-8 py-8 bg-white border rounded-lg border-1 ">
+                <p class="mt-1 text-lg font-medium text-center text-gray-600 font-open">30 days
+                  </p>
+                  <h5 class="flex items-start justify-center py-5">
+                      <span class="relative text-2xl font-semibold text-gray-700">&dollar;</span>
+                      <span class="text-4xl font-semibold text-gray-700">30</span>
+                  </h5>
+                 <!---------->
+    
+                 <p class="text-center">Retain your performance and access <br>for 30 days</p>
+                  <!--------------->
+                  <div class="mx-auto mt-20">
+                   <button class="py-4 mx-auto text-lg font-medium text-blue-500 border border-blue-500 rounded-full hover:bg-blue-500 bottom-1 w-28 hover:text-white">Renew</button>
+               </div>
+                  
+              </div>
+            
+            </div>
+           </div>
+        </div>
+
+        <!-- COMBO Cards -->
+        <div id="combo" class="cards-section hidden">
+           <div class="flex justify-center">
+            <div class="cards-grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 py-10">
+              <div class="flex flex-col justify-center px-8 py-8 bg-white border rounded-lg w-80 border-1">
+                <p class="text-lg text-center text-gray-600 font-open">Most Popular</p>
+                 <p class="mt-1 text-lg font-medium text-center text-gray-600 font-open">90 days
+                   </p>
+                   <h5 class="flex items-start justify-center py-5">
+                       <span class="relative text-2xl font-semibold text-gray-700">&dollar;</span>
+                       <span class="text-4xl font-semibold text-gray-700">199</span>
+                   </h5>
+                  <!---------->
+                  <div class="flex flex-col items-center">
+                  <ul class="flex flex-col justify-center py-5 text-sm text-gray-600  gap-y-3">
+                   <li class="flex gap-x-1"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="blue" class="bi bi-check-lg" viewBox="0 0 16 16">
+         <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+        </svg>Entire Digital SAT & ACT Qbank</li>
+                   <li class="flex gap-x-1"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="blue" class="bi bi-check-lg" viewBox="0 0 16 16">
+         <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+        </svg> 4300+ practice questions</li>
+        <li class="flex gap-x-1"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="blue" class="bi bi-check-lg" viewBox="0 0 16 16">
+        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+        </svg>1 ACT self-assessment with score predictor</li>
+        
+                   </ul></div>
+                   <!--------------->
+                   <button class="py-4 mx-auto mt-5 text-lg font-medium text-blue-500 border border-blue-500 rounded-full hover:bg-blue-500 bottom-1 w-28 hover:text-white">Buy Now</button>
+                   
+               </div>
+               <!-------->
+               <div class="flex flex-col justify-center px-8 py-8 bg-white border rounded-lg w-80 border-1">
+                <p class="text-lg text-center text-gray-600 font-open">Most Effective</p>
+                 <p class="mt-1 text-lg font-medium text-center text-gray-600 font-open">180 days
+                   </p>
+                   <h5 class="flex items-start justify-center py-5">
+                       <span class="relative text-2xl font-semibold text-gray-700">&dollar;</span>
+                       <span class="text-4xl font-semibold text-gray-700">249</span>
+                   </h5>
+                  <!---------->
+        
+              <div class="flex flex-col items-center">    <ul class="flex flex-col justify-center py-5 text-sm text-gray-600  gap-y-3">
+                    <li class="flex gap-x-1"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="blue" class="bi bi-check-lg" viewBox="0 0 16 16">
+          <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+         </svg>Entire Digital SAT & ACT Qbank</li>
+                    
+         <li class="flex gap-x-1"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="blue" class="bi bi-check-lg" viewBox="0 0 16 16">
+            <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+           </svg> 4300+ practice questions</li>
+           <li class="flex gap-x-1"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="blue" class="bi bi-check-lg" viewBox="0 0 16 16">
+            <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+           </svg>Performance Tracking</li>
+         <li class="flex gap-x-1"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="blue" class="bi bi-check-lg" viewBox="0 0 16 16">
+         <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+         </svg>1 ACT self-assessment with score predictor</li>
+         
+                    </ul></div>
+                   <!--------------->
+                   <button class="py-4 mx-auto mt-5 text-lg font-medium text-blue-500 border border-blue-500 rounded-full hover:bg-blue-500 bottom-1 w-28 hover:text-white">Buy Now</button>
+        
+                   
+               </div>
+               <!------3-->
+               <div class="flex flex-col justify-center px-8 py-8 bg-white border rounded-lg w-80 border-1">
+                <p class="text-lg text-center text-gray-600 font-open">Best Value</p>
+                 <p class="mt-1 text-lg font-medium text-center text-gray-600 font-open">180 days
+                   </p>
+                   <h5 class="flex items-start justify-center py-5">
+                       <span class="relative text-2xl font-semibold text-gray-700">&dollar;</span>
+                       <span class="text-4xl font-semibold text-gray-700">199</span>
+                   </h5>
+                  <!---------->
+                  <div class="flex flex-col items-center"> <ul class="flex flex-col justify-center py-5 text-sm text-gray-600  gap-y-3">
+                    <li class="flex gap-x-1"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="blue" class="bi bi-check-lg" viewBox="0 0 16 16">
+          <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+         </svg>Entire Digital SAT & ACT Qbank</li>
+                 
+         <li class="flex gap-x-1"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="blue" class="bi bi-check-lg" viewBox="0 0 16 16">
+            <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+           </svg> 4300+ practice questions</li>
+           <li class="flex gap-x-1"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="blue" class="bi bi-check-lg" viewBox="0 0 16 16">
+            <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+           </svg>Performance Tracking</li>
+         <li class="flex gap-x-1"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" fill="blue" class="bi bi-check-lg" viewBox="0 0 16 16">
+         <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+         </svg>1 ACT self-assessment with score predictor</li>
+         
+                    </ul></div>
+                   <!--------------->
+                   <button class="py-4 mx-auto mt-5 text-lg font-medium text-white bg-blue-500 border border-blue-500 rounded-full hover:bg-blue-800 bottom-1 w-28">Buy Now</button>
+                   
+               </div>
+            </div>
+           </div>
+        </div>
+    </div>
+
+    <script>
+        function showSection(section) {
+            // Hide all sections and reset button styles
+            document.querySelectorAll('.cards-section').forEach(el => el.classList.add('hidden'));
+            document.querySelectorAll('#navigation-links').forEach(el => el.classList.add('hidden'));
+            document.querySelectorAll('.text-blue-500').forEach(el => el.classList.remove('text-blue-500', 'font-bold'));
+            document.querySelectorAll('.text-gray-500').forEach(el => el.classList.remove('text-gray-500'));
+
+            // Show the relevant section
+            if (section === 'combo') {
+                document.querySelector(`#${section}`).classList.remove('hidden');
+                document.querySelector('#navigation-links').classList.add('hidden');
+            } else {
+                document.querySelector(`#${section}-qbank`).classList.remove('hidden');
+                document.querySelector('#navigation-links').classList.remove('hidden');
+            }
+
+            // Highlight the active button
+            document.querySelector(`#${section}-btn`).classList.add('text-blue-500', 'font-bold');
+        }
+
+        function showContent(content) {
+            const activeSectionId = document.querySelector('.cards-section:not(.hidden)').id;
+            if (activeSectionId === 'combo') return; // Skip content change for COMBO section
+
+            // Hide all content and update link styles
+            document.querySelectorAll('.cards-section').forEach(el => el.classList.add('hidden'));
+
+            if (activeSectionId.includes('digital-sa')) {
+                document.querySelector(`#digital-sa-${content}`).classList.remove('hidden');
+            } else if (activeSectionId.includes('act')) {
+                document.querySelector(`#act-${content}`).classList.remove('hidden');
+            }
+
+            document.querySelectorAll('.text-blue-500').forEach(el => el.classList.remove('text-blue-500', 'font-bold'));
+            document.querySelectorAll('.text-gray-500').forEach(el => el.classList.remove('text-gray-500'));
+            document.querySelector(`#${content}-link`).classList.add('text-blue-500', 'font-bold');
+        }
+
+        // Initialize default view
+        document.addEventListener('DOMContentLoaded', () => {
+            showSection('digital-sa');
+            showContent('qbank');
+        });
+    </script>
+</body>
+</html>

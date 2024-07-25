@@ -11,6 +11,7 @@
     <meta property="og:url" content="https://www.firstacademy.in/">
     <meta property="og:description"
         content="First Academy is the one of the Best PTE Personalised coaching institute. PTE Personalised coaching.">
+    <meta property="og:image" content="https://piofx.s3.ap-south-1.amazonaws.com/themes/53/file_FirstAcademy.png">
     <link rel="shortcut icon" href="https://piofx.s3.ap-south-1.amazonaws.com/themes/53/file_FA.svg">
     <link href="../dist/output.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,12 +22,13 @@
 </head>
 
 <body class="font-open">
-    <header class="fixed z-50 w-screen border-b border-gray-200">
-        <nav class="text-sm transition-all duration-500 ease-in-out bg-white bg-no-repeat ">
+    <header class="fixed z-10 w-screen border-b border-gray-200">
+        <nav
+            class="text-sm transition-all duration-500 ease-in-out bg-white bg-no-repeat">
             <div class="items-center justify-between max-w-screen-xl px-4 py-2 mx-auto lg:flex sm:px-[60px] ">
                 <div class="flex justify-between">
                     <div>
-                        <a href="./index.html"
+                        <a href="#"
                             class="inline-flex py-2 text-xl font-bold tracking-wider uppercase me-auto">
                             <img src="https://prep.firstacademy.in/images/logo.png" alt="logo" width="180px">
                         </a>
@@ -39,7 +41,7 @@
                                     <a href="./contactus.html"
                                         class="flex items-center px-5 py-2 font-semibold bg-teal-600 rounded-lg group"
                                         id="chatButton">
-                                        <span class="mr-2 font-open">Chat</span>
+                                        <span class="mr-2 ">Chat</span>
                                         <svg class="stroke-current" width="10" height="10" stroke-width="2"
                                             viewBox="0 0 10 10" aria-hidden="true" class="hidden sm:flex">
                                             <g fill-rule="evenodd">
@@ -73,57 +75,61 @@
                             class="flex flex-col w-full space-y-2 lg:w-auto lg:flex-row lg:space-y-0 lg:space-x-1 mt-1.5 transition-all duration-300 ease-in-out  text-xl ls-2">
                             <li>
                                 <a href="./index.html"
-                                    class="flex px-4 py-2 font-medium duration-300 ease-in-out rounded-md text-[16px] font-open hover:text-teal-500">
+                                    class="flex px-4 py-2 font-medium duration-300 ease-in-out rounded-md text-[16px]  hover:text-teal-500">
                                     Home
                                 </a>
                             </li>
                             <li class="relative" onmouseover="showDropdown('dropdownMenu1')"
                                 onmouseout="hideDropdown('dropdownMenu1')" onclick="toggleDropdown('dropdownMenu1')">
                                 <button
-                                    class="flex w-full px-4 py-2 font-medium rounded-md outline-none focus:outline-none hover:text-teal-500 text-[16px] font-open"
+                                    class="flex justify-between items-center w-full px-4 py-2 font-medium rounded-md outline-none focus:outline-none hover:text-teal-500 text-[16px] "
                                     id="dropdownToggle1">
                                     Courses
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4 mt-1 lg:hidden ">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                      </svg>
+                                      
                                 </button>
                                 <div class="right-0 hidden w-full p-2 rounded-md lg:absolute dropdown-menu lg:w-[400px] "
                                     id="dropdownMenu1">
                                     <div
-                                        class="grid grid-cols-5 transform bg-white rounded-lg shadow lg:translate-x-40">
+                                        class="grid grid-cols-5 transform bg-gray-100 border-l-4 border-gray-500 rounded-lg shadow md:bg-white lg:translate-x-40 lg:border-none">
                                         <div class="col-span-2">
                                             <p
-                                                class="uppercase tracking-wider text-gray-500 font-medium text-[13px] pt-2 px-6">
+                                                class="uppercase  tracking-wider text-gray-800 font-medium text-[13px] pt-2 px-6">
                                                 Get started</p>
                                             <ul class="mt-3 text-[16px]">
-                                                <li class="px-6 py-3 m-0 hover:bg-blue-100">
+                                                <li class="px-6 py-3 m-0 hover:bg-teal-100">
                                                     <a href="./courses.html"
                                                         class="block m-0 font-medium text-gray-800 ">
                                                         All Courses
                                                     </a>
                                                 </li>
-                                                <li class="px-6 py-3 m-0 hover:bg-blue-100">
+                                                <li class="px-6 py-3 m-0 hover:bg-teal-100">
                                                     <a href="./ielts.html"
                                                         class="block m-0 font-medium text-gray-800 ">
                                                         IELTS
                                                     </a>
                                                 </li>
-                                                <li class="px-6 py-3 m-0 hover:bg-blue-100">
+                                                <li class="px-6 py-3 m-0 hover:bg-teal-100">
                                                     <a href="./gre.html"
                                                         class="block m-0 font-medium text-gray-800 ">
                                                         GRE
                                                     </a>
                                                 </li>
-                                                <li class="px-6 py-3 m-0 hover:bg-blue-100">
+                                                <li class="px-6 py-3 m-0 hover:bg-teal-100">
                                                     <a href="./pte.html"
                                                         class="block m-0 font-medium text-gray-800 ">
                                                         PTE
                                                     </a>
                                                 </li>
-                                                <li class="px-6 py-3 m-0 hover:bg-blue-100">
+                                                <li class="px-6 py-3 m-0 hover:bg-teal-100">
                                                     <a href="./oet.html"
                                                         class="block m-0 font-medium text-gray-800 ">
                                                         OET
                                                     </a>
                                                 </li>
-                                                <li class="px-6 py-3 m-0 hover:bg-blue-100">
+                                                <li class="px-6 py-3 m-0 hover:bg-teal-100">
                                                     <a href="./sat.html"
                                                         class="block m-0 font-medium text-gray-800 ">
                                                         SAT
@@ -132,40 +138,40 @@
                                             </ul>
                                         </div>
                                         <div class="col-span-3">
-                                            <p class="uppercase tracking-wider text-gray-500 font-medium text-[13px] px-6 mt-2">
+                                            <p class="uppercase  tracking-wider text-gray-800 font-medium text-[13px] px-6 mt-2">
                                                 Other Courses</p>
                                             <ul class="mt-3 text-[16px]">
-                                                <li class="px-6 py-3 m-0 hover:bg-blue-100">
+                                                <li class="px-6 py-3 m-0 hover:bg-teal-100">
                                                     <a href="./toefl.html"
                                                         class="block m-0 font-medium text-gray-800 ">
                                                         TOEFL
                                                     </a>
                                                 </li>
-                                                <li class="px-6 py-3 m-0 hover:bg-blue-100">
+                                                <li class="px-6 py-3 m-0 hover:bg-teal-100">
                                                     <a href="./det.html"
                                                         class="block m-0 font-medium text-gray-800 ">
                                                         DET
                                                     </a>
                                                 </li>
-                                                <li class="px-6 py-3 m-0 hover:bg-blue-100">
+                                                <li class="px-6 py-3 m-0 hover:bg-teal-100">
                                                     <a href="./ielts-band9-training.html"
                                                         class="block m-0 font-medium text-gray-800 ">
                                                         IELTS Band 9 Training
                                                     </a>
                                                 </li>
-                                                <li class="px-6 py-3 m-0 hover:bg-blue-100">
+                                                <li class="px-6 py-3 m-0 hover:bg-teal-100">
                                                     <a href="./pteonline.html"
                                                         class="block m-0 font-medium text-gray-800 ">
                                                         PTE Personalized
                                                     </a>
                                                 </li>
-                                                <li class="px-6 py-3 m-0 hover:bg-blue-100">
+                                                <li class="px-6 py-3 m-0 hover:bg-teal-100">
                                                     <a href="./custom.html"
                                                         class="block m-0 font-medium text-gray-800 ">
                                                         Corporate Training
                                                     </a>
                                                 </li>
-                                                <li class="px-6 py-3 m-0 hover:bg-blue-100">
+                                                <li class="px-6 py-3 m-0 hover:bg-teal-100">
                                                     <a href="./spokenenglish.html"
                                                         class="block m-0 font-medium text-gray-800 ">
                                                         English Language Training
@@ -179,39 +185,43 @@
                             <li class="relative" onmouseover="showDropdown('dropdownMenu')"
                                 onmouseout="hideDropdown('dropdownMenu')" onclick="toggleDropdown('dropdownMenu')">
                                 <button
-                                    class="flex w-full px-4 py-2 font-medium rounded-md outline-none focus:outline-none hover:text-teal-500 text-[16px] font-open"
+                                    class="flex justify-between w-full px-4 py-2 font-medium rounded-md outline-none focus:outline-none hover:text-teal-500 text-[16px] "
+                                    class="flex justify-between w-full px-4 py-2 font-medium rounded-md outline-none focus:outline-none hover:text-teal-500 text-[16px] "
                                     id="dropdownToggle">
                                     Material
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4 mt-1 lg:hidden ">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                      </svg>
                                 </button>
                                 <div class="right-0 hidden p-2 lg:absolute dropdown-menu" id="dropdownMenu">
                                     <div
-                                        class="transform bg-white rounded-lg shadow lg:translate-x-28">
+                                        class="transform lg:border-0 bg-gray-100 border-l-4 border-gray-500 rounded-lg shadow md:bg-white lg:translate-x-28">
                                         <ul class=" text-[15px] lg:w-52">
-                                            <li class="px-4 py-3 m-0 rounded-t-xl hover:bg-blue-100">
+                                            <li class="px-4 py-3 m-0 rounded-t-xl hover:bg-teal-100">
                                                 <a href="./reading.html"
-                                                    class="block m-0 font-medium text-gray-800 ">
+                                                    class="block m-0 font-medium text-gray-800  ">
                                                     IELTS Reading
                                                 </a>
                                             </li>
-                                            <li class="px-4 py-3 m-0 hover:bg-blue-100">
+                                            <li class="px-4 py-3 m-0 hover:bg-teal-100">
                                                 <a href="https://firstacademy.in/grer"
                                                     class="block m-0 font-medium text-gray-800 ">
                                                     GRE Solutions
                                                 </a>
                                             </li>
-                                            <li class="px-4 py-3 m-0 hover:bg-blue-100">
+                                            <li class="px-4 py-3 m-0 hover:bg-teal-100">
                                                 <a href="./downloads.html"
                                                     class="block m-0 font-medium text-gray-800 ">
                                                     Downloads
                                                 </a>
                                             </li>
-                                            <li class="px-4 py-3 m-0 hover:bg-blue-100">
+                                            <li class="px-4 py-3 m-0 hover:bg-teal-100">
                                                 <a href="https://prep.firstacademy.in"
                                                     class="block m-0 font-medium text-gray-800 ">
                                                     Practice Tests
                                                 </a>
                                             </li>
-                                            <li class="px-4 py-3 m-0 rounded-b-xl hover:bg-blue-100">
+                                            <li class="px-4 py-3 m-0 rounded-b-xl hover:bg-teal-100">
                                                 <a href="https://super.firstacademy.in/"
                                                     class="block m-0 font-medium text-gray-800 ">
                                                     GRE Login
@@ -223,40 +233,43 @@
                             </li>
                             <li>
                                 <a href="https://firstacademy.in/blog"
-                                    class="flex px-4 py-2 font-medium rounded-md text-[16px] font-open  hover:text-teal-500">
+                                    class="flex px-4 py-2 font-medium rounded-md text-[16px]   hover:text-teal-500">
                                     Blog
                                 </a>
                             </li>
                             <li>
                                 <a href="./studyabroad.html"
-                                    class="flex px-4 py-2 font-medium rounded-md hover:text-teal-500 text-[16px] font-open">
+                                    class="flex px-4 py-2 font-medium rounded-md hover:text-teal-500 text-[16px] ">
                                     Study Abroad
                                 </a>
                             </li>
                             <li class="relative" onmouseover="showDropdown('dropdownMenu2')"
                                 onmouseout="hideDropdown('dropdownMenu2')" onclick="toggleDropdown('dropdownMenu2')">
                                 <button
-                                    class="flex w-full px-4 py-2 font-medium rounded-md outline-none focus:outline-none hover:text-teal-500 text-[16px] font-open"
+                                    class="flex justify-between w-full px-4 py-2 font-medium rounded-md outline-none focus:outline-none hover:text-teal-500 text-[16px] "
                                     id="dropdownToggle2">
                                     About
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4 mt-1 lg:hidden ">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                      </svg>
                                 </button>
                                 <div class="right-0 hidden p-2 lg:absolute dropdown-menu" id="dropdownMenu2">
                                     <div
-                                        class="transform bg-white rounded-lg shadow lg:translate-x-28">
+                                        class="transform lg:border-0 bg-gray-100 border-l-4 border-gray-500 rounded-lg shadow md:bg-white lg:translate-x-28">
                                         <ul class="text-[16px] lg:w-48">
-                                            <li class="px-4 py-3 m-0 rounded-t-lg hover:bg-blue-100">
+                                            <li class="px-4 py-3 m-0 rounded-t-lg hover:bg-teal-100">
                                                 <a href="./about-us.html"
-                                                    class="block m-0 font-medium text-gray-800 ">
+                                                    class="block m-0 font-medium text-gray-800  ">
                                                     Us
                                                 </a>
                                             </li>
-                                            <li class="px-4 py-3 m-0 hover:bg-blue-100">
+                                            <li class="px-4 py-3 m-0 hover:bg-teal-100">
                                                 <a href="./team.html"
                                                     class="block m-0 font-medium text-gray-800 ">
                                                     Team
                                                 </a>
                                             </li>
-                                            <li class="px-4 py-3 m-0 rounded-b-xl hover:bg-blue-100">
+                                            <li class="px-4 py-3 m-0 rounded-b-xl hover:bg-teal-100">
                                                 <a href="./contactus.html"
                                                     class="block m-0 font-medium text-gray-800 ">
                                                     Contact
@@ -271,7 +284,7 @@
                                 <a href="./contactus.html"
                                     class="flex items-center px-5 py-1.5 my-auto mb-1  font-semibold rounded-lg bg-teal-500 group"
                                     id="chatButton">
-                                    <span class="mr-2 text-[16px] font-open">Chat</span>
+                                    <span class="mr-2 text-[16px] ">Chat</span>
                                     <svg class="stroke-current" width="10" height="10" stroke-width="2"
                                         viewBox="0 0 10 10" aria-hidden="true" class="hidden sm:flex">
                                         <g fill-rule="evenodd">
@@ -615,14 +628,14 @@
     
     <!--Our trainers-->
     <section class="bg-gray-100 ">
-        <div class="max-w-screen-xl px-4 mx-auto sm:px-8 md:w-[80%]">
+        <div class="max-w-screen-xl px-4 mx-auto sm:px-8 lg:w-[80%]">
             <div class="px-4 py-8 mx-auto md:py-12 md:px-16">
-                <p class="pb-4 text-3xl font-bold text-center font-noto">Our Trainers</p>
+                <p class="pb-4 text-2xl md:text-4xl font-bold text-center font-noto">Our Trainers</p>
                 <p class="text-lg text-justify sm:text-center font-xl">Our trainers are widely regarded as the best
                     trainers available anywhere in India. With top notch certifications from Cambridge, including GRADE
                     A scores in tests like the CPE (the most advanced English language exam conducted by the University
                     of Cambridge) you can be assured of training that is unparalleled.</p>
-                <p class="pt-4 pb-4 text-3xl font-bold text-center font-noto">Our Coaching</p>
+                <p class="py-4 text-2xl md:text-4xl font-bold text-center font-noto">Our Coaching</p>
                 <p class="text-lg text-justify sm:text-center font-xl">With only up to 5 members per session, our PTE
                     training sessions are flexible, and customisable. Our trainers work individually with each candidate
                     and suggest tips and tricks to achieve improvements in all modules of the test!</p>
@@ -632,8 +645,8 @@
     </section>
 
     <!--Training Details-->   
-    <section class="py-8 ">      
-        <p class="mt-2 text-3xl font-bold text-center font-noto">Training Details</p>
+    <section class="p-4 md:py-8 ">      
+        <p class="mt-2 text-2xl md:text-4xl font-bold text-center font-noto">Training Details</p>
         <p class="pt-2 text-lg font-normal text-center text-gray-700">Personalised and Online Training details are available here</p>
         <div class="max-w-screen-xl px-4 mx-auto sm:px-16">
             <div class="justify-center py-8 mx-auto md:flex md:space-x-8">
@@ -724,7 +737,7 @@
     <!--Exam pattern-->
     <section class="bg-teal-400 ">
         <div class="max-w-screen-xl p-4 mx-auto sm:px-[70px] sm:py-8">
-            <p class="py-2 text-3xl font-bold text-center font-noto">Exam Pattern</p>
+            <p class="py-2 text-2xl md:text-4xl font-bold text-center font-noto">Exam Pattern</p>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-8">
                 <div>
                     <p class="py-4 text-xl font-bold font-noto">Part 1: Speaking & Writing (77 – 93 mins)</p>
@@ -1163,8 +1176,8 @@
 
     <!--Review section-->
     <section class="max-w-screen-xl p-4 mx-auto md:py-8 sm:px-16">
-        <h1 class="text-xl font-bold md:text-3xl font-noto">Loved by students and professionals</h1>
-        <h1 class="text-xl font-bold md:text-3xl font-noto">across the globe.</h1>
+        <h1 class="text-2xl font-bold md:text-4xl font-noto">Loved by students and professionals</h1>
+        <h1 class="text-2xl font-bold md:text-4xl font-noto">across the globe.</h1>
 
         <div class="grid max-w-screen-xl grid-cols-12 mx-auto mt-2 md:mt-8 sm:gap-4 md:gap-8 place-items-center">
             <!--first-->
@@ -1202,7 +1215,7 @@
                             I am satisfied with the content and techniques in solving questions which were taught by the faculty. I highly recommend FIRST ACADEMY for IELTS coaching.
                         </p>
                         <br>
-                        <div class="flex md:relative top-28">
+                        <div class="flex sm:relative top-28">
                             <div class="my-auto">
                                 <img src="../assets/file_review-1.png" width="45px" class="me-2" alt="priya">
                             </div>
@@ -1304,7 +1317,7 @@
                             </svg>
                         </div>
                         <p class="py-4 mt-2 md:text-lg">AMAZING facility For IELTS In Hyderabad, Management is Very Professional and Will be quick to resolve your queries</p>
-                        <div class="flex md:relative top-40">
+                        <div class="flex sm:relative top-40">
                             <div class="my-auto">
                                 <img src="../assets/file_review-2.png" width="45px" class="me-2"
                                     alt="yuktha">
@@ -1327,7 +1340,7 @@
     <!--Faq-->
     <section class="bg-gray-100">
         <section class="max-w-screen-xl p-4 pb-8 mx-auto sm:px-16">
-            <h1 class="pb-4 mt-4 text-2xl font-bold text-center font-noto md:text-3xl">Frequently Asked Questions
+            <h1 class="pb-4 mt-4 text-2xl font-bold text-center font-noto md:text-4xl">Frequently Asked Questions
             </h1>
 
             <!--first-->
@@ -1489,7 +1502,7 @@
         </div>
 
         <!--footer links-->
-        <section class="border-t-2 border-gray-200 ">
+        <section class="border-t-2 border-gray-200 font-semibold">
             <div class="p-4 sm:px-0">
                 <div class="max-w-screen-xl mx-auto sm:px-[60px]">
                     <div class="space-y-6">
@@ -1969,80 +1982,94 @@
         </div>
     </div>
 
+   
     <!-- Modal -->
-    <div id="popup"
-        class="fixed inset-0 z-50 flex items-center justify-center hidden w-screen h-full bg-gray-700 bg-opacity-50">
+    <div id="popup" class="fixed inset-0 z-50 flex items-center justify-center hidden w-screen h-full bg-gray-700 bg-opacity-50">
 
-        <div class="p-4 m-8 bg-white rounded-lg sm:p-8 w-92 sm:w-3/5">
-            <div class="flex justify-between p-4 mb-0 text-blue-800 bg-blue-200 rounded">
+        <div class="p-4 m-2 sm:m-8 bg-white rounded-lg sm:p-8 w-[96vw] sm:w-3/5 lg:w-[600px] max-h-[95vh] overflow-y-auto">
+            <div class="flex justify-between p-4 mb-0 rounded-lg bg-gray-100">
 
                 <div class=" w-[97%]" role="alert">
                     Do enter the country code of your phone number.<br> Ex: <kbd>+91</kbd> for
                     India, <kbd>+1</kbd> for the USA.
                 </div>
 
-                <button class="relative top-0 left-0 mb-4 text-3xl text-gray-500 w-[3%] ms-auto hover:text-gray-700"
+                <button
+                    class="relative top-0 left-0 mb-4 text-3xl text-gray-500 w-[3%] ms-auto hover:text-gray-700"
                     data-popup-close="popup">&times;</button>
             </div>
 
             <br>
-            <h3 class="text-blue-900">Where would you want to attend a demo</h3>
-            <div class="flex justify-center p-3 my-3 space-x-4 bg-blue-100 rounded-lg">
+            <h3 class="text-teal-900">Where would you want to attend a demo</h3>
+            <div class="flex justify-center p-3 my-3 space-x-4 bg-gray-100 rounded-lg">
                 <div class="flex items-center">
-                    <input class="form-checkbox" type="radio" name="settings_location" id="Ameerpet" value="ameerpet">
+                    <input class="form-checkbox" type="radio" name="settings_location" id="Ameerpet"
+                        value="ameerpet">
                     <label class="ml-2" for="Ameerpet">Ameerpet</label>
                 </div>
                 <div class="flex items-center">
-                    <input class="form-checkbox" type="radio" name="settings_location" id="Madhapur" value="madhapur">
+                    <input class="form-checkbox" type="radio" name="settings_location" id="Madhapur"
+                        value="madhapur">
                     <label class="ml-2" for="Madhapur">Madhapur</label>
                 </div>
                 <div class="flex items-center">
-                    <input class="form-checkbox" type="radio" name="settings_location" id="Online" value="online">
+                    <input class="form-checkbox" type="radio" name="settings_location" id="Online"
+                        value="online">
                     <label class="ml-2" for="Online">Online</label>
                 </div>
             </div>
-            <h3 class="text-blue-900">Which session would you like to try?</h3>
-            <div class="bg-blue-100">
+            <h3 class="text-teal-900">Which session would you like to try?</h3>
+            <div class="bg-gray-100">
                 <div class="flex justify-center p-3 mt-3 space-x-4 rounded-lg">
                     <div class="flex items-center">
-                        <input class="form-checkbox" type="checkbox" value="gre" id="gre" name="settings_course[]">
+                        <input class="form-checkbox" type="checkbox" value="gre" id="gre"
+                            name="settings_course[]">
                         <label class="ml-2" for="gre">GRE</label>
                     </div>
                     <div class="flex items-center">
-                        <input class="form-checkbox" type="checkbox" value="gre" id="gre" name="settings_course[]">
+                        <input class="form-checkbox" type="checkbox" value="gre" id="gre"
+                            name="settings_course[]">
                         <label class="ml-2" for="gre">IELTS</label>
                     </div>
                     <div class="flex items-center">
-                        <input class="form-checkbox" type="checkbox" value="gre" id="gre" name="settings_course[]">
+                        <input class="form-checkbox" type="checkbox" value="gre" id="gre"
+                            name="settings_course[]">
                         <label class="ml-2" for="gre">TOEFL</label>
                     </div>
                     <div class="flex items-center">
-                        <input class="form-checkbox" type="checkbox" value="gre" id="gre" name="settings_course[]">
+                        <input class="form-checkbox" type="checkbox" value="gre" id="gre"
+                            name="settings_course[]">
                         <label class="ml-2" for="gre">PTE</label>
                     </div>
                 </div>
                 <div class="flex justify-center p-3 mb-3 space-x-4 rounded-lg">
 
                     <div class="flex items-center">
-                        <input class="form-checkbox" type="checkbox" value="gre" id="gre" name="settings_course[]">
+                        <input class="form-checkbox" type="checkbox" value="gre" id="gre"
+                            name="settings_course[]">
                         <label class="ml-2" for="gre">OET</label>
                     </div>
                     <div class="flex items-center">
-                        <input class="form-checkbox" type="checkbox" value="gre" id="gre" name="settings_course[]">
+                        <input class="form-checkbox" type="checkbox" value="gre" id="gre"
+                            name="settings_course[]">
                         <label class="ml-2" for="gre">SAT</label>
                     </div>
                     <div class="flex items-center">
-                        <input class="form-checkbox" type="checkbox" value="gre" id="gre" name="settings_course[]">
+                        <input class="form-checkbox" type="checkbox" value="gre" id="gre"
+                            name="settings_course[]">
                         <label class="ml-2" for="gre">OTHERS</label>
                     </div>
                 </div>
             </div>
 
-            <input type="text" class="block w-full p-4 mt-2 form-input " placeholder="Name" name="name">
-            <input type="email" class="block w-full p-4 mt-2 form-input " placeholder="Email" name="email">
-            <input type="text" class="block w-full p-4 mt-2 form-input " placeholder="Phone Number" name="phone">
+            <input type="text" class="block w-full px-4 py-2 focus:ring-blue-400 mt-2 form-input " placeholder="Name"
+                name="name">
+            <input type="email" class="block w-full px-4 py-2 focus:ring-blue-400 mt-2 form-input " placeholder="Email"
+                name="email">
+            <input type="text" class="block w-full px-4 py-2 focus:ring-blue-400 mt-2 form-input " placeholder="Phone Number"
+                name="phone">
             <button type="button"
-                class="block w-full p-4 mt-3 text-white bg-blue-900 btn btn-block transition-3d-hover contact_button">Submit</button>
+                class="block w-full p-4 mt-3 text-white bg-cyan-600 btn btn-block transition-3d-hover contact_button">Submit</button>
         </div>
     </div>
 

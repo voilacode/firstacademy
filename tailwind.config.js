@@ -27,7 +27,9 @@ module.exports = {
         'open': ['Open Sans', 'sans-serif'],
         'noto': ['Noto Serif', 'serif'],
     }
+    
   },
+  
   plugins: [],
 }
 }
