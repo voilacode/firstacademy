@@ -3599,6 +3599,10 @@ lite-youtube.lyt-activated>.lty-playbtn {
     padding: 1.75rem;
   }
 
+  .md\:p-3 {
+    padding: 0.75rem;
+  }
+
   .md\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
