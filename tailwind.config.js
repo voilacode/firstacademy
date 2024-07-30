@@ -13,11 +13,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'teal-custom': "#209765",
-        'bright-pink': "#EA526F",
-        'champagne-pink': "#FCEADE",
-        'coral': "#FF8A5B",
-        'violet': '#4B1D3F',
+        'teal-custom': "#036041",
       },
       animation: {
         fade: 'fadeOut 0.5s ease-in-out',
