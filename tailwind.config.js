@@ -14,6 +14,7 @@ module.exports = {
     extend: {
       colors: {
         'teal-custom': "#036041",
+        'side-heading': "#66ade1",
       },
       animation: {
         fade: 'fadeOut 0.5s ease-in-out',
@@ -27,12 +28,12 @@ module.exports = {
       }),
       fontFamily: {
         'open': ['Open Sans', 'sans-serif'],
-        'noto': ['Noto Serif', 'serif'],
-        'source-sans': ['Source Sans 3', 'sans-serif'],
-        'archivo': ["Archivo", 'sans-serif'],
-        'julius': ["Julius Sans One", 'sans-serif'],
-        'league': ["League Gothic", 'sans-serif'],
-        'sifonn': ["Sifonn", 'sans-serif'],
+        // 'noto': ['Noto Serif', 'serif'],
+        // 'source-sans': ['Source Sans 3', 'sans-serif'],
+        // 'archivo': ["Archivo", 'sans-serif'],
+        // 'julius': ["Julius Sans One", 'sans-serif'],
+        // 'league': ["League Gothic", 'sans-serif'],
+        // 'sifonn': ["Sifonn", 'sans-serif'],
     }
     
   },
