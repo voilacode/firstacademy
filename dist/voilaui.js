@@ -197,10 +197,10 @@ function animateNumber(id, finalValue, duration) {
     const triggerOffset = 100; // Adjust this value if needed to trigger the animation earlier or later
   
     if (sectionTop - triggerOffset <= windowHeight) {
-      animateNumber('activeLearners', 15000, 2000);
-      animateNumber('directPlacements', 4000, 2000);
-      animateNumber('collegesNetwork', 300, 2000);
-      animateNumber('corporateClients', 180, 2000);
+      animateNumber('successStories', 62000, 2000);
+      animateNumber('yearsOfService', 23, 2000);
+      animateNumber('scholarships', 785, 2000);
+      animateNumber('uniAdmits', 300000, 2000);
       window.removeEventListener('scroll', startAnimationOnScroll); // Remove the event listener once triggered
     }
   }
