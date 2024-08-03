@@ -19,7 +19,9 @@ module.exports = {
       animation: {
         fade: 'fadeOut 0.5s ease-in-out',
       },
-
+      screens: {
+        'md': '800px', // Custom breakpoint at 1440px
+      },
       keyframes: theme => ({
         fadeOut: {
           '0%': { opacity: 0.5 },
