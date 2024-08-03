@@ -600,6 +600,10 @@ video {
   border-width: 0;
 }
 
+.visible {
+  visibility: visible;
+}
+
 .fixed {
   position: fixed;
 }
@@ -709,6 +713,10 @@ video {
   top: 85%;
 }
 
+.right-5 {
+  right: 1.25rem;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -763,6 +771,10 @@ video {
 
 .col-span-8 {
   grid-column: span 8 / span 8;
+}
+
+.col-span-11 {
+  grid-column: span 11 / span 11;
 }
 
 .float-right {
@@ -1052,6 +1064,11 @@ video {
   height: 1.5rem;
 }
 
+.size-12 {
+  width: 3rem;
+  height: 3rem;
+}
+
 .h-10 {
   height: 2.5rem;
 }
@@ -1245,6 +1262,10 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[90\%\] {
+  width: 90%;
 }
 
 .min-w-full {
@@ -1691,6 +1712,10 @@ video {
 
 .border-t-4 {
   border-top-width: 4px;
+}
+
+.border-l-2 {
+  border-left-width: 2px;
 }
 
 .border-black {
@@ -2420,6 +2445,18 @@ video {
   padding-top: 2rem;
 }
 
+.ps-4 {
+  padding-inline-start: 1rem;
+}
+
+.ps-2 {
+  padding-inline-start: 0.5rem;
+}
+
+.pr-12 {
+  padding-right: 3rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2519,6 +2556,10 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-\[10px\] {
+  font-size: 10px;
 }
 
 .font-\[400\] {
@@ -3128,6 +3169,11 @@ lite-youtube.lyt-activated>.lty-playbtn {
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-gray-300:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
 .hover\:text-black:hover {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -3200,6 +3246,10 @@ lite-youtube.lyt-activated>.lty-playbtn {
 
 .hover\:underline:hover {
   text-decoration-line: underline;
+}
+
+.hover\:opacity-80:hover {
+  opacity: 0.8;
 }
 
 .hover\:shadow-md:hover {
@@ -3734,6 +3784,10 @@ lite-youtube.lyt-activated>.lty-playbtn {
     display: block;
   }
 
+  .md\:inline {
+    display: inline;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -4107,6 +4161,10 @@ lite-youtube.lyt-activated>.lty-playbtn {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+
+  .md\:text-\[12px\] {
+    font-size: 12px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -4124,6 +4182,10 @@ lite-youtube.lyt-activated>.lty-playbtn {
 
   .lg\:top-5 {
     top: 1.25rem;
+  }
+
+  .lg\:right-20 {
+    right: 5rem;
   }
 
   .lg\:col-span-2 {
